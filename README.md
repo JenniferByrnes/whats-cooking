@@ -1,13 +1,13 @@
 # whats-cooking
 
-Class project to build a tech blog.  It requires login to post and comment.
+Class project to create an online recipe app.  It requires login to post/update/delete recipes.
 
 ## Description:
 
-Allows a logged in techies to publish blog posts and to comment on others' posts. 
+Allows a user to search for recipes and see a picture, ingredients, and directions.  Authorized users can update, post, and delete recipes.
 
 Link to deployed app:
-https://mvc-tech-blog-jkb.herokuapp.com/
+https://someapp.herokuapp.com/
 
 ## Table of Contents
 
@@ -45,12 +45,17 @@ Fork the repository and do a pull request for your code to be reviewed.
 
 ## Tests
 
-
+node test - uses jest to execute tests.
 
 ## Questions?
 
 GitHub profile: https://github.com/jenniferbyrnes
+GitHub profile: https://github.com/jenniferbyrnes
+GitHub profile: https://github.com/jenniferbyrnes
+GitHub profile: https://github.com/jenniferbyrnes
+GitHub profile: https://github.com/jenniferbyrnes
+GitHub profile: https://github.com/jenniferbyrnes
 
-Please address any questions to me at jennifer.byrnes@outlook.com
+Please address any questions to one of the Team Ratatouille team members via GitHub.
   
   
