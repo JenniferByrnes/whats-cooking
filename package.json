@@ -1,5 +1,5 @@
 {
-  "name": "mvc-tech-blog",
+  "name": "whats-cooking",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JenniferByrnes/mvc-tech-blog.git"
+    "url": "git+https://github.com/JenniferByrnes/whats-cooking.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JenniferByrnes/mvc-tech-blog/issues"
+    "url": "https://github.com/JenniferByrnes/whats-cooking/issues"
   },
-  "homepage": "https://github.com/JenniferByrnes/mvc-tech-blog#readme",
+  "homepage": "https://github.com/JenniferByrnes/whats-cooking#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
