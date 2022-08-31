@@ -25,9 +25,14 @@ fetch(
     // for{
     //   let entry = {}
     // console.log(recipeSeeds);
-    Recipe.bulkCreate(recipeSeeds);
+     Recipe.bulkCreate(recipeSeeds);
+
+   
 
     // }
   })
+
   // .then((response) => console.log((response) => {}))
   .catch((err) => console.error(err));
+
+  
