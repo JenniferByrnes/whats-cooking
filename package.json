@@ -1,5 +1,5 @@
 {
-  "name": "seeds",
+  "name": "whats-cooking",
   "version": "1.0.0",
   "description": "Class project to build a tech blog.  It requires login to post and comment.",
   "main": "index.js",
