@@ -9,7 +9,7 @@ const options = {
 };
 
 fetch(
-  "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=100",
+  "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=2",
   options
 )
   .then((response) => response.json())
@@ -22,12 +22,7 @@ fetch(
       instructions: JSON.stringify(recipe.instructions),
     }));
 
-    // for{
-    //   let entry = {}
-    // console.log(recipeSeeds);
     Recipe.bulkCreate(recipeSeeds);
-
-    // }
   })
-  // .then((response) => console.log((response) => {}))
+
   .catch((err) => console.error(err));

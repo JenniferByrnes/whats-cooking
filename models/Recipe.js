@@ -32,11 +32,11 @@ Recipe.init(
     },
     // ingredients
     extendedIngredients: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
     },
     // instructions
     instructions: {
-      type: DataTypes.STRING,
+      type: DataTypes.JSON,
     },
   },
   {
