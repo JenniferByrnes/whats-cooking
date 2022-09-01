@@ -25,14 +25,16 @@ fetch(
     // for{
     //   let entry = {}
     // console.log(recipeSeeds);
-     Recipe.bulkCreate(recipeSeeds);
+      return Recipe.bulkCreate(recipeSeeds);
 
    
 
     // }
   })
 
+  module.exports = recipeData();
+
   // .then((response) => console.log((response) => {}))
-  .catch((err) => console.error(err));
+  //.catch((err) => console.error(err));
 
   

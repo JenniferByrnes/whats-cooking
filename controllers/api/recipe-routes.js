@@ -1,9 +1,34 @@
 const router = require("express").Router();
-const { Recipe } = require("../../models");
+const { Recipe, Comment, User, Post } = require("../../models");
+const withAuth = require('../../utils/auth');
 
 // GET /api/recipes
 router.get("/", (req, res) => {
-    Recipe.findAll()
+    Recipe.findAll({
+        attributes: [
+            'id', 
+            'title',
+            'images',   
+            'ingredients',
+            'servings',
+            'cuisines',
+            'instructions',
+          ],
+          include: [
+            {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+              include: {
+                model: User,
+                attributes: ['username']
+              }
+            },
+            {
+              model: User,
+              attributes: ['username']
+            }
+          ]
+    })
     .then(dbrecipeData => res.json(dbrecipeData))
     .catch(err => {
       console.log(err);
@@ -17,6 +42,29 @@ router.get("/:id", (req, res) => {
         where: {
             id: req.params.id
           },
+          attributes: [
+            'id', 
+            'title',  
+            'images', 
+            'ingredients',
+            'servings',
+            'cuisines',
+            'instructions'
+          ],
+          include: [
+            {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+              include: {
+                model: User,
+                attributes: ['username']
+              }
+            },
+            {
+              model: User,
+              attributes: ['username']
+            }
+          ]
       })
         .then(dbrecipeData => res.json(dbrecipeData))
         .catch(err => {
@@ -26,13 +74,15 @@ router.get("/:id", (req, res) => {
 });
 
 // POST /api/recipes
-router.post("/", (req, res) => {
+router.post("/", withAuth, (req, res) => {
     Recipe.create({
         title: req.body.title,
-        summary: req.body.summary,
+        images: req.body.images,
+        ingredients: req.body.ingredients,
+        servings: req.body.servings,
         cuisines: req.body.cuisines,
-        extendendIngredients: req.body.extendedIngredients,
-        instructions: req.body.instructions
+        instructions: req.body.instructions,
+        user_id: req.session.user_id
       })
         .then(dbrecipeData => res.json(dbrecipeData))
         .catch(err => {
@@ -42,13 +92,14 @@ router.post("/", (req, res) => {
 });
 
 // PUT /api/recipes/1
-router.put("/:id", (req, res) => {
+router.put("/:id", withAuth, (req, res) => {
     Recipe.update(
         {
           title: req.body.title,
-          summary: req.body.summary,
+          images: req.body.images,
+          ingredients: req.body.ingredients,
+          servings: req.body.servings,
           cuisines: req.body.cuisines,
-          extendedIngredients: req.body.extendedIngredients,
           instructions: req.body.instructions
         },
         {
@@ -72,7 +123,7 @@ router.put("/:id", (req, res) => {
 });
 
 // DELETE /api/recipes/1
-router.delete("/:id", (req, res) => {
+router.delete("/:id", withAuth, (req, res) => {
     Recipe.destroy({
         where: {
           id: req.params.id
