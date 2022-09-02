@@ -33,4 +33,26 @@ Post.hasMany(Comment, {
   foreignKey: "post_id",
 });
 
+Recipe.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "SET NULL",
+});
+
+// create associations
+User.hasMany(Recipe, {
+  foreignKey: "user_id",
+});
+
+Comment.belongsTo(Recipe, {
+  foreignKey: "post_id",
+  onDelete: "SET NULL",
+});
+
+Recipe.hasMany(Comment, {
+  foreignKey: "recipe_id",
+  onDelete: "SET NULL",
+});
+
+
+
 module.exports = { User, Post, Comment, Recipe };

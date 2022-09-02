@@ -17,27 +17,27 @@ Recipe.init(
       // turn on auto increment
       autoIncrement: true,
     },
-    //recipe name
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    // recipe summary
-    summary: {
-      type: DataTypes.TEXT,
-    },
-    // cuisine
-    cuisines: {
-      type: DataTypes.STRING,
-    },
-    // ingredients
-    extendedIngredients: {
-      type: DataTypes.STRING,
-    },
-    // instructions
-    instructions: {
-      type: DataTypes.STRING,
-    },
+      //recipe name
+      title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      // ingredients
+      ingredients: {
+        type: DataTypes.STRING,
+      },
+      // instructions
+      instructions: {
+        type: DataTypes.TEXT,
+      },
+      // cuisine
+      cuisines: {
+        type: DataTypes.STRING,
+      },
+      // serving
+      serving: {
+        type: DataTypes.INTEGER,
+      },
   },
   {
     sequelize,

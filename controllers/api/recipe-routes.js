@@ -7,10 +7,9 @@ router.get("/", (req, res) => {
     Recipe.findAll({
         attributes: [
             'id', 
-            'title',
-            'images',   
+            'title',   
             'ingredients',
-            'servings',
+            'serving',
             'cuisines',
             'instructions',
           ],
@@ -44,10 +43,9 @@ router.get("/:id", (req, res) => {
           },
           attributes: [
             'id', 
-            'title',  
-            'images', 
+            'title',   
             'ingredients',
-            'servings',
+            'serving',
             'cuisines',
             'instructions'
           ],
@@ -77,9 +75,8 @@ router.get("/:id", (req, res) => {
 router.post("/", withAuth, (req, res) => {
     Recipe.create({
         title: req.body.title,
-        images: req.body.images,
         ingredients: req.body.ingredients,
-        servings: req.body.servings,
+        serving: req.body.serving,
         cuisines: req.body.cuisines,
         instructions: req.body.instructions,
         user_id: req.session.user_id
@@ -96,9 +93,8 @@ router.put("/:id", withAuth, (req, res) => {
     Recipe.update(
         {
           title: req.body.title,
-          images: req.body.images,
           ingredients: req.body.ingredients,
-          servings: req.body.servings,
+          serving: req.body.serving,
           cuisines: req.body.cuisines,
           instructions: req.body.instructions
         },
