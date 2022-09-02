@@ -22,21 +22,21 @@ Recipe.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // recipe summary
-    summary: {
+    // ingredients
+    ingredients: {
+      type: DataTypes.STRING,
+    },
+    // instructions
+    instructions: {
       type: DataTypes.TEXT,
     },
     // cuisine
     cuisines: {
       type: DataTypes.STRING,
     },
-    // ingredients
-    extendedIngredients: {
-      type: DataTypes.STRING,
-    },
-    // instructions
-    instructions: {
-      type: DataTypes.STRING,
+    // serving
+    serving: {
+      type: DataTypes.INTEGER,
     },
   },
   {
