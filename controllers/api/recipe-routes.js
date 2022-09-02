@@ -3,6 +3,7 @@ const { Recipe } = require("../../models");
 
 // GET /api/recipes
 router.get("/", (req, res) => {
+  // get all recipes
   Recipe.findAll()
     .then((dbRecipeData) => res.json(dbRecipeData))
     .catch((err) => {
@@ -22,27 +23,6 @@ router.get("/:id", (req, res) => {
     .then((dbRecipeData) => {
       if (!dbRecipeData) {
         res.status(404).json({ message: "No recipe found with this id" });
-        return;
-      }
-      res.json(dbRecipeData);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
-
-// find a route based on its cuisine
-router.get("/:cuisine", (req, res) => {
-  // find a single recipe by its `cuisine`
-  Recipe.findOne({
-    where: {
-      cuisine: req.params.cuisine,
-    },
-  })
-    .then((dbRecipeData) => {
-      if (!dbRecipeData) {
-        res.status(404).json({ message: "No recipe found with this cuisine" });
         return;
       }
       res.json(dbRecipeData);
