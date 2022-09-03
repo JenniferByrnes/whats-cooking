@@ -1,23 +1,29 @@
 <article>
   <a href="/dashboard"> &larr; Back to dashboard</a>
   <h2>
-    Edit Post
+    Edit Recipe
   </h2>
-  <form class="edit-post-form">
+  <form class="edit-recipe-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
+      <input name="recipe-title" type="text" value="{{recipe.title}}" />
       <br><br>
-      {{textarea "post-text" post.post_text  }}
+      {{textarea "recipe-text" recipe.recipe_text  }}
       <br><br><br>
+            <input name="recipe-ingredients" type="text" value="{{recipe.ingredients}}" />
+      <br><br>
+            <input name="recipe-cuisines" type="text" value="{{recipe.cuisines}}" />
+      <br><br>
+            <input name="recipe-serving" type="text" value="{{recipe.serving}}" />
+      <br><br>
     </div>
 
     <div>
-      by you on {{format_date post.created_at}}
+      by you on {{format_date recipe.created_at}}
       |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+      <a href="/recipe/{{recipe.id}}">{{recipe.comments.length}} {{format_plural "comment" recipe.comments.length}}</a>
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    <button type="submit">Save recipe</button>
+    <button type="button" class="delete-recipe-btn">Delete recipe</button>
   </form>
 </article>
 
@@ -31,8 +37,8 @@
   </div>
 </form>
 
-{{> comments post.comments}}
+{{> comments recipe.comments}}
 
-<script src="/javascript/edit-post.js"></script>
-<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/edit-recipe.js"></script>
+<script src="/javascript/delete-recipe.js"></script>
 <script src="/javascript/comment.js"></script>
