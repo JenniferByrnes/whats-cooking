@@ -41,7 +41,7 @@ const recipeData = [
     title: "Authentic French Meringues",
     ingredients: "4 eggs whites, 2 1/4 cups confectioners' sugar.",
     instructions:
-      "Preheat the oven to 200 degrees F (95 degrees C). Butter and flour a baking sheet.In a glass or metal bowl, whip egg whites until foamy using an electric mixer. Sprinkle in sugar a little at a time, while continuing to whip at medium speed. When the mixture becomes stiff and shiny like satin, stop mixing, and transfer the mixture to a large pastry bag. Pipe the meringue out onto the prepared baking sheet using a large round tip or star tip.Place the meringues in the oven and place a wooden spoon handle in the door to keep it from closing all the way. Bake for 3 hours, or until the meringues are dry, and can easily be removed from the pan. Allow cookies to cool completely before storing in an airtight container at room temperature.",
+      "Preheat the oven to 200 degrees F (95 degrees C). Butter and flour a baking sheet. In a glass or metal bowl, whip egg whites until foamy using an electric mixer. Sprinkle in sugar a little at a time, while continuing to whip at medium speed. When the mixture becomes stiff and shiny like satin, stop mixing, and transfer the mixture to a large pastry bag. Pipe the meringue out onto the prepared baking sheet using a large round tip or star tip.Place the meringues in the oven and place a wooden spoon handle in the door to keep it from closing all the way. Bake for 3 hours, or until the meringues are dry, and can easily be removed from the pan. Allow cookies to cool completely before storing in an airtight container at room temperature.",
     cuisines: "French",
     serving: 36,
   },
@@ -179,6 +179,49 @@ const recipeData = [
       "Peel cucumbers. Halve lengthwise and remove seeds. Slice into 1/4-inch thick half moons. Mix vinegar, sugar, and soy sauce together in a bowl until sugar is completely dissolved. Add cucumbers and stir until coated. Cover and refrigerate for at least 2 hours before serving. Sprinkle with sesame seeds and serve cold.",
     cuisines: "Japanese",
     serving: 4,
+  },
+  {
+    title: "Honey Cayenne Pulled Pork",
+    ingredients:
+      "8-10 lb Boston butt, 2 Tbsp butter, 1 white onion-sliced, 1 Tbsp of BBQ rub, 1 cup ketchup, 1/2 cup hot sauce, 1 cup honey, 2 Tbsp cayenne pepper flakes, 1 3/4 cup apple cider vinegar, wood chunks for smoking",
+    instructions:
+      "Preheat your smoker to 250 degrees.  Season the butt with your favorite BBQ rub.  Place on smoker and cook until the internal temperature reaches 205 degrees (8-10 hours).  In a preheated pan, saute' onions with 2 Tbsp of butter until golden brown then add all the remaining ingredients and simmer for 15 minutes.  When pork is done, remove from the smoker and let rest for 1 hour.  Shred the pork and mix with the Honey Cayenne BBQ Sauce.",
+    cuisines: "American",
+    serving: 10,
+  },
+  {
+    title: "Slow Cooker Pollo in Potachio",
+    ingredients:
+      "2 tsp olive oil, 8 bone-in drumsticks (skin removed), 1 tsp kosher salt, Freshly ground black pepper, 1 large yellow onion (finely chopped), 1 celery stalk chopped, 1 carrot chopped, 4 garlic cloves chopped, pinch of crushed red pepper, 1/4 cup dry white wine, 1(28-ounce) can crushed tomatoes, 1/2 cup reduced-sodium chicken broth, 3 sprigs of fresh rosemary, 1/4 tsp marjoram",
+    instructions:
+      "Season chicken with salt and pepper.  Brown chicken in a hot skillet with 1 tsp oil.  After all sides are browned, transfer to a slow cooker.  Add the remaining tsp of oil to the skilleet and add the onion, celery, carrot, garlic, and pepper flakes.  Cook until soft, 8-10 minutes.  Add the wine and cook for 3-4 minutes to reduce slightly.  Transfer to the slow cooker and add the tomatoes, broth, rosemary, majoram, remaining salt and pepper to taste.  Cover and cook on low for 8 hours.",
+    cuisines: "Italian",
+    serving: 4,
+  },
+  {
+    title: "Ahi Tuna Poke Jicama Tacos",
+    ingredients: 
+      "1 lb sushi-grade ahi tuna (cut into 1/2 inch cubes, 1/4 cup reduced-sodium soy sauce, 1 tsp toasted sesame oil, 1 tsp grated fresh ginger, 1 garlic clove (crushed), 1 medium jicama (4 inches in diameter), 1 1/2 cups shredded romain lettuce, 1 medium Hass avocado (cut into 24 thin strips), 2 Tbsp sliced scallions, 1 tsp black and white sesame seeds, Sriracha sauce",
+    instructions: 
+      "Combine the tuna, soy, sesame oil, ginger, and garlic.  Refrigerate for 20 minutes.  Peel the jicama and slice off the ends.  Cut the hicama into twelve 1/8 inch-thick slices to create your tortillas.  To assemble the tacos, put 3 jicama slices on each of 4 plates.  Top each jicama slice with 2 Tbps shredded lettuce, 3 Tbsp tuna, 2 slices avocado, scallions, seasame seeds, and Sriracha.",
+    cuisines: "Hawaiian",
+    serving: 4,
+  },
+  {
+    title: "Prosciutto-Wrapped Pesto Chicken Pasta",
+    ingredients: 
+      "4 Tbsp butter (divided), 1 crown broccoli (chopped), 1 lb boneless and skinless chicken breast, 8 slices of prosciutto, 1/2 cup basil pesto, 1/4 cup coconut milk, 2 zucchini squash (noodled)",
+    instructions: 
+      "Melt butter in a warm skillet and saute' broccoli for 5 minutes.  Remove and set aside.  Slice chicken in half and then in half again, creating 8 strips.  Tightly wrap each piece in prosciutto.  Melt the remaining butter and sear chicken for two minutes, flipping half way.  Reduce the heat to low.  Stir in the pesto, coconut milk and broccoli, coving the chicken in the sauce.  Place lid on the skillet and simmer for 15-20 minutes.  Serve over zucchini noodles.",
+    cuisines: "Italian",
+    serving: 2,
+  },
+  {
+    title: "Lemon Tarragon Herb Butter",
+    ingredients: "1 stick salted butter (softened), 2 Tbsp fresh tarragon (chopped), Zest of 1 lemon, 1/4 tsp sea salt (if using unsalted butter)",
+    instructions: "Mix ingredients in a medium bowl and then place on parchment paper.  Fold the parchment paper over the butter mixture and using your hands roll the mixture into a log.  Twist either end of the parchemnt paper to seal.  Store in the freezer and use as needed.",
+    cuisines: "American",
+    serving: 1,
   },
 ];
 
