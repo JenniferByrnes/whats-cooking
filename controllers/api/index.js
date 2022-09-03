@@ -8,6 +8,6 @@ const recipeRoutes = require('./recipe-routes')
 router.use('/users', userRoutes);
 router.use('/posts', postRoutes);
 router.use('/comments', commentRoutes);
-router.use('/recipes', recipeRoutes);
+router.use('/recipies', recipeRoutes);
 
 module.exports = router;
