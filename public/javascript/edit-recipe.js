@@ -2,8 +2,8 @@ async function editFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="recipe-title"]').value.trim();
-  const ingredients = document.querySelector('input[name="recipe-ingredients"]').value;
-  const instructions = document.querySelector('textarea[name="recipe-text"]').value.trim();
+  const instructions = document.querySelector('textarea[name="recipe-instructions"]').value.trim();
+  const ingredients = document.querySelector('textarea[name="recipe-ingredients"]').value.trim();
   const cuisines = document.querySelector('input[name="recipe-cuisines"]').value;
   const serving = document.querySelector('input[name="recipe-serving"]').value;
 

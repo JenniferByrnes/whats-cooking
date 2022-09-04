@@ -14,7 +14,7 @@ router.get('/', withAuth, (req, res) => {
       'id',
       'instructions',
       'title',
-      'instructions',
+      'ingredients',
       'cuisines',
       'serving',
       'created_at'
@@ -50,7 +50,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       'id',
       'instructions',
       'title',
-      'instructions',
+      'ingredients',
       'cuisines',
       'serving',
       'created_at'
@@ -73,7 +73,6 @@ router.get('/edit/:id', withAuth, (req, res) => {
     .then(dbRecipeData => {
       if (dbRecipeData) {
         const recipe = dbRecipeData.get({ plain: true });
-        
         res.render('edit-recipe', {
           recipe,
           loggedIn: true
