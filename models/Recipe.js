@@ -26,12 +26,28 @@ Recipe.init(
     ingredients: {
       type: DataTypes.STRING,
     },
+    // ingredients
+    ingredient_array: {
+      type: DataTypes.JSON,
+    },
     // instructions
     instructions: {
       type: DataTypes.TEXT,
     },
+    // summary
+    summary: {
+      type: DataTypes.STRING,
+    },
+    // image
+    image: {
+      type: DataTypes.STRING,
+    },
     // cuisine
     cuisines: {
+      type: DataTypes.STRING,
+    },
+    // type
+    type: {
       type: DataTypes.STRING,
     },
     // serving
