@@ -5,15 +5,15 @@
   </h2>
   <form class="edit-recipe-form">
     <div>
-      <input name="recipe-title" type="text" value="{{recipe.title}}" />
+      <input name="recipe-title" type="text" value="{{recipe.recipe-title}}" />
       <br><br>
-      {{textarea "recipe-text" recipe.recipe_text  }}
+      {{textarea "recipe-instructions" recipe.recipe-instructions }}
       <br><br><br>
-            <input name="recipe-ingredients" type="text" value="{{recipe.ingredients}}" />
+      {{textarea "recipe-ingredients" recipe.recipe-ingredients }}
       <br><br>
-            <input name="recipe-cuisines" type="text" value="{{recipe.cuisines}}" />
+      <input name="recipe-cuisines" type="text" value="{{recipe.recipe-cuisines}}" />
       <br><br>
-            <input name="recipe-serving" type="text" value="{{recipe.serving}}" />
+      <input name="recipe-serving" type="text" value="{{recipe.recipe-serving}}" />
       <br><br>
     </div>
 

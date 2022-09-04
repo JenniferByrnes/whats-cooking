@@ -42,6 +42,7 @@ router.post("/", (req, res) => {
     instructions: req.body.instructions,
     cuisines: req.body.cuisines,
     serving: req.body.serving,
+    user_id: req.session.user_id
   })
     .then((dbRecipeData) => res.json(dbRecipeData))
     .catch((err) => {

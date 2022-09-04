@@ -2,10 +2,10 @@ async function editFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="recipe-title"]').value.trim();
-  const recipe_ingredients = document.querySelector('input[name="recipe-ingredients"]').value;
-  const recipe_instructions = document.querySelector('textarea[name="recipe-text"]').value.trim();
-  const recipe_cuisines = document.querySelector('input[name="recipe-cuisines"]').value;
-  const recipe_serving = document.querySelector('input[name="recipe-serving"]').value;
+  const ingredients = document.querySelector('input[name="recipe-ingredients"]').value;
+  const instructions = document.querySelector('textarea[name="recipe-text"]').value.trim();
+  const cuisines = document.querySelector('input[name="recipe-cuisines"]').value;
+  const serving = document.querySelector('input[name="recipe-serving"]').value;
 
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
@@ -14,10 +14,10 @@ async function editFormHandler(event) {
     method: 'PUT',
     body: JSON.stringify({
       title,
-      recipe_ingredients, 
-      recipe_instructions,
-      recipe_cuisines,
-      recipe_serving
+      ingredients, 
+      instructions,
+      cuisines,
+      serving
     }),
     headers: {
       'Content-Type': 'application/json'
