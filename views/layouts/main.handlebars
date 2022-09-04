@@ -1,44 +1,43 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> What's Cooking</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> What's Cooking</title>
+    <link rel="stylesheet" href="/stylesheets/output.css" />
+  </head>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Home</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
+  <body>
+    <div>
+      <header class="w-full">
+        <h1>
+          <a href="/">Home</a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+            <a href="/dashboard">Dashboard</a>
+            <button id="logout" class="btn-no-style">Logout</button>
+          {{else}}
+            <a href="/login">Login</a>
+          {{/if}}
+        </nav>
 
       </header>
       <header>
         <h2>What's Cooking</h2>
       </header>
 
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
-  
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
+
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </body>
 
 </html>
