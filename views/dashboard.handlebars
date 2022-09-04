@@ -1,31 +1,43 @@
-<section id="create-post" class="hide">
+<section id="create-recipe" class="hide">
 
-  <form class="new-post-form">
-    <h2>Create New Post</h2>
+  <form class="new-recipe-form">
+    <h2>Create New Recipe</h2>
     <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <label for="recipe-title">Title</label>
+      <input type="text" id="recipe-title" name="recipe-title" />
     </div>
     <div>
-      <label for="post-text">Blog Text</label>
-      <textarea name="post-text"></textarea>
+      <label for="recipe-instructions">Instructions</label>
+      <input type="text" id="recipe-instructions" name="recipe-instructions" />
+    </div>
+    <div>
+      <label for="recipe-ingredients">Ingredients</label>
+      <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
+    </div>
+    <div>
+      <label for="recipe-cuisines">Cuisine</label>
+      <input type="text" id="recipe-cuisines" name="recipe-cuisines" />
+    </div>
+    <div>
+      <label for="recipe-serving">Servings</label>
+      <input type="text" id="recipe-serving" name="recipe-serving" />
     </div>
     <button type="add" class="btn">Add</button>
   </form>
 </section>
 
-<section id="display-posts">
-  <h2>Your Posts</h2>
-  <button id="create-btn" type="submit" class="btn">Create New post</button>
+<section id="display-recipes">
+  <h2>Your Recipes</h2>
+  <button id="create-btn" type="submit" class="btn">Create New Recipe</button>
   <ol>
-    {{#each posts as |post|}}
+    {{#each recipes as |recipe|}}
     <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      {{> recipe-info recipe}}
+      <a href="/dashboard/edit/{{recipe.id}}" class="edit-link">Edit recipe</a>
     </li>
     {{/each}}
   </ol>
 </section>
 
 
-<script src="/javascript/add-post.js"></script>
+<script src="/javascript/add-recipe.js"></script>
