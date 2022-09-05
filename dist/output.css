@@ -567,6 +567,7 @@ video {
   border-width: 1px;
 }
 
+<<<<<<< HEAD
 .bg-hero {
   background-image: url('../images/bg-image.avif');
 }
@@ -580,6 +581,8 @@ video {
   line-height: 2rem;
 }
 
+=======
+>>>>>>> de6c87b81a0ec8f8010bb88f10186d632583a51a
 .italic {
   font-style: italic;
 }

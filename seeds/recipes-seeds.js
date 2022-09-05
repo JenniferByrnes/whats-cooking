@@ -13,6 +13,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "French",
     serving: 5,
+    user_id: 1,
   },
   {
     title: "Quick and Easy Home Fries",
@@ -27,6 +28,7 @@ const recipeData = [
     type: "Side",
     cuisines: "American",
     serving: 4,
+    user_id: 1,
   },
   {
     title: "Classic Hash Browns",
@@ -41,6 +43,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "American",
     serving: 2,
+    user_id: 1,
   },
   {
     title: "Good Old Fashioned Pancakes",
@@ -55,6 +58,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "French",
     serving: 8,
+    user_id: 1,
   },
   {
     title: "Authentic French Meringues",
@@ -68,6 +72,7 @@ const recipeData = [
     type: "Dessert",
     cuisines: "French",
     serving: 36,
+    user_id: 1,
   },
   {
     title: "Chapati",
@@ -82,6 +87,7 @@ const recipeData = [
     type: "Side",
     cuisines: "African",
     serving: 6,
+    user_id: 1,
   },
   {
     title: "Brazilian Grilled Pineapple",
@@ -96,6 +102,7 @@ const recipeData = [
     type: "Dessert",
     cuisines: "Brazilian",
     serving: 6,
+    user_id: 1,
   },
   {
     title: "Brazilian Lemonade",
@@ -110,6 +117,7 @@ const recipeData = [
     type: "Beverage",
     cuisines: "Brazilian",
     serving: 4,
+    user_id: 1,
   },
   {
     title: "Brazilian Cheese Rolls (Pao de Queijo)",
@@ -124,6 +132,7 @@ const recipeData = [
     type: "Side",
     cuisines: "Brazilian",
     serving: 14,
+    user_id: 1,
   },
   {
     title: "Simple Macaroni and Cheese",
@@ -138,6 +147,7 @@ const recipeData = [
     type: "Side",
     cuisines: "American",
     serving: 4,
+    user_id: 1,
   },
   {
     title: "French Toast",
@@ -152,6 +162,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "French",
     serving: 3,
+    user_id: 1,
   },
   {
     title: "Shortbread",
@@ -166,6 +177,7 @@ const recipeData = [
     type: "Dessert",
     cuisines: "British",
     serving: 6,
+    user_id: 1,
   },
   {
     title: "Cinder Toffee",
@@ -180,6 +192,7 @@ const recipeData = [
     type: "Dessert",
     cuisines: "British",
     serving: 15,
+    user_id: 1,
   },
   {
     title: "Cheesy Salmon Pasta",
@@ -194,6 +207,7 @@ const recipeData = [
     type: "Dinner",
     cuisines: "Italian",
     serving: 4,
+    user_id: 1,
   },
   {
     title: "Mexican Natillas",
@@ -208,6 +222,7 @@ const recipeData = [
     type: "Dessert",
     cuisines: "Mexican",
     serving: 6,
+    user_id: 1,
   },
   {
     title: "Easy Italian Chicken",
@@ -222,6 +237,7 @@ const recipeData = [
     type: "Dinner",
     cuisines: "Italian",
     serving: 6,
+    user_id: 1,
   },
   {
     title: "Chinese Pork Rib Tips",
@@ -236,6 +252,7 @@ const recipeData = [
     type: "Dinner",
     cuisines: "Chinese",
     serving: 4,
+    user_id: 1,
   },
   {
     title: "Lithuanian Saltibarsciai (Cold Beet Soup)",
@@ -250,6 +267,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "Lithuanian",
     serving: 8,
+    user_id: 1,
   },
   {
     title: "Ginger Salad Dressing",
@@ -264,6 +282,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "Japanese",
     serving: 12,
+    user_id: 1,
   },
   {
     title: "Cucumber Salad",
@@ -278,6 +297,7 @@ const recipeData = [
     type: "Breakfast",
     cuisines: "Japanese",
     serving: 4,
+    user_id: 1,
   },
 ];
 

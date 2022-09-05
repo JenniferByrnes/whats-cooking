@@ -2,15 +2,13 @@ async function newFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="recipe-title"]').value;
-  console.log("&&&&&&&&&&&&&&&&&&&");
-  console.log("title=", title);
   const ingredients = document.querySelector('input[name="recipe-ingredients"]').value;
-  console.log("ingredients=", ingredients);
   const instructions = document.querySelector('input[name="recipe-instructions"]').value;
-  console.log("instructions=", instructions);
   const cuisines = document.querySelector('input[name="recipe-cuisines"]').value;
-  console.log("cuisines=", cuisines);
   const serving = document.querySelector('input[name="recipe-serving"]').value;
+  const image = document.querySelector('input[name="recipe-image"]').value;
+  const summary = document.querySelector('input[name="recipe-summary"]').value;
+  const type = document.querySelector('input[name="recipe-type"]').value;
   console.log("serving=", serving);
 
   const response = await fetch(`/api/recipes`, {
@@ -20,6 +18,9 @@ async function newFormHandler(event) {
       ingredients,
       instructions,
       cuisines,
+      image,
+      summary,
+      type,
       serving
     }),
     headers: {
