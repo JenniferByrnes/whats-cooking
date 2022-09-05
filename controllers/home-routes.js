@@ -50,6 +50,11 @@ router.get('/recipe/:id', (req, res) => {
       'id',
       'summary',
       'title',
+      'image',
+      'type',
+      'instructions',
+      'ingredients',
+      'ingredient_array',
       'created_at'
     ],
     include: [
