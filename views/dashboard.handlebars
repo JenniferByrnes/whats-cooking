@@ -15,12 +15,20 @@
       <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
     </div>
     <div>
-      <label for="recipe-cuisines">Cuisine</label>
-      <input type="text" id="recipe-cuisines" name="recipe-cuisines" />
+      <label for="recipe-cuisines">Choose A Cuisine</label>
+      <select cuisine="recipe-cuisines" id="recipe-cuisines">
+      <option value="American">American</option>
+      <option value="French">French</option>
+      <option value="Italian">Italian</option>
+      <option value="Brazilian">Brazilian</option>
+      <option value="African">African</option>
+      <option value="German">German</option>
+     <option value="Mexican">Mexican</option>
+</select>
     </div>
     <div>
       <label for="recipe-serving">Servings</label>
-      <input type="text" id="recipe-serving" name="recipe-serving" />
+      <input type="number" min="0" id="recipe-serving" name="recipe-serving" />
     </div>
     <button type="add" class="btn">Add</button>
   </form>

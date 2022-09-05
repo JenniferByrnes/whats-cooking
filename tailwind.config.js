@@ -5,7 +5,11 @@ module.exports = {
     "./views/layouts/main.handlebars",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('../images/bg-image.avif')",
+      },
+    },
   },
   plugins: [],
 };
