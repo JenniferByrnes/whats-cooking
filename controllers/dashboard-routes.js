@@ -17,6 +17,9 @@ router.get('/', withAuth, (req, res) => {
       'ingredients',
       'cuisines',
       'serving',
+      'summary',
+      'image',
+      'type',
       'created_at'
     ],
     include: [
@@ -53,6 +56,9 @@ router.get('/edit/:id', withAuth, (req, res) => {
       'ingredients',
       'cuisines',
       'serving',
+      'summary',
+      'image',
+      'type',
       'created_at'
     ],
     include: [
