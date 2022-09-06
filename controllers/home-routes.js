@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
       'id',
       'summary',
       'title',
+      'image',
       'created_at'
     ],
     include: [
