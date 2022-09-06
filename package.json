@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -35,6 +35,7 @@
     "spoonacular_api": "^1.0.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.19",
     "tailwindcss": "^3.1.8"
   }
 }
