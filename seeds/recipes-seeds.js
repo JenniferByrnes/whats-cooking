@@ -223,6 +223,27 @@ const recipeData = [
     cuisines: "American",
     serving: 1,
   },
+  {
+    title: "Whiskey Chicken",
+    ingredients: "2-2.5 lb chicken, 1/2 stick butter (softened), salt and pepper, 1 lemon, 3 Tbsp whiskey, 1/2 cup heavy cream",
+    instructions: "Preheat the oven to 400 degrees F.  Rub the chicken all over with the softened butter and squeeze the lemon over it.  Put the lemon inside the chicken cavity and season with salt and pepper.  Roast chicken until brown and crisp, about an hour or until an internal reading of 180 degrees F.  Carve the chicken and set aside.  In a skillet pour in the whiskey and set a match to burn off the alcohol.  Pour in the cream and heat through.  Pour the sauce over the chicken and serve.",
+    cuisines: "Irish",
+    serving: 4,
+  },
+  {
+    title: "Pest-Stuffed Pork Chops",
+    ingredients: "3 Tbsp crumbled feta cheese, 2 Tbsp basil pesto, 1 Tbsp toasted pine nuts, 4 pork loin chops (1 1/2 inch thick), 1 tsp black pepper, 1 tsn dried oregano, 1 tsp minced garlic, 1/4 tsp crushed red pepper, 1/4 tsp thyme, 1 Tbsp balsamic vinegar",
+    instructions: "Stir together the cheese, pesto and nuts.  Cut a pocket into each chop and divide the filling into each.  If needed, use a toothpick to secure each opening.  Combine the remaining ingredients except the vinegar and rub onto each side of pork chops.  Place chops in a roasting pan and roast at 375 degrees for 35-45 minutes.  Brush vinegar onto chops during the last 5 minutes of baking.",
+    cuisines: "American",
+    serving: 4,
+  },
+  {
+    title: "Pork Chops with Black Bean Salsa",
+    ingredients: "4 pork loin chops (1 1/2 inch thick, 1 teaspoon Jamaican jerk or Cajun seasoning, 2/3 cup corn relish, 8 oz canned black beans (rinsed and drained), 1 1/2 tsp lime juice, 1/4 tsp cumin",
+    instructions: "Trim the fat from the meat and preheat the broiler.  Rub seasoning and black pepper onto both sides of the pork chops.  Place pork chops on the unheated rack of a broiler pan.  Broil 3 to 4 inches from the heat for 16 to 20 minutes or until done, turning meat over after half the broiling time.  Meanwhile, for salsa, combine corn relish, beans, lime joice, and cumin.  Serve chops with salsa and, if desired, dairy sour cream.",
+    cuisines: "Caribbean",
+    serving: 4,
+  }
 ];
 
 const seedRecipes = () => Recipe.bulkCreate(recipeData);
