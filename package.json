@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
+    "start": "node server.js",
+  "build": "npx tailwindcss -i ./public/stylesheets/style.css -o ./public/stylesheets/output.css"},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JenniferByrnes/whats-cooking#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.8",
     "bcrypt": "^5.0.1",
     "connect-session": "^0.0.1",
     "connect-session-sequelize": "^7.1.5",
@@ -28,6 +29,8 @@
     "express-session": "^1.17.3",
     "handlebars-form-helpers": "^0.1.4",
     "mysql2": "^2.3.3",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "sequelize": "^6.21.4",
     "spoonacular_api": "^1.0.0"
   },
