@@ -1,36 +1,104 @@
-<form class="login-form">
-  <div>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <label for="username-login">username:</label>
-    <input type="text" id="username-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
+<body
+  class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0"
+  style="font-family:'Lato',sans-serif;"
+>
+  <main
+    class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl"
+  >
+    <style>
+      .body-bg { background-color: #6c584c; background-image:
+      linear-gradient(315deg, #adc178 0%, #f0ead2 74%); }
+    </style>
+    <section>
+      <h3 class="font-bold text-2xl">Welcome to What's Cooking</h3>
+      <p class="text-gray-600 pt-2">Sign in to your account.</p>
+    </section>
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
+    <section class="mt-10">
+      <form class="flex flex-col login-form" method="POST" action="#">
+        <div class="mb-6 pt-3 rounded bg-gray-200">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2 ml-3"
+            for="username-login"
+          >Username</label>
+          <input
+            type="text"
+            id="username-login"
+            class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
+          />
+        </div>
+        <div class="mb-6 pt-3 rounded bg-gray-200">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2 ml-3"
+            for="password-login"
+          >Password</label>
+          <input
+            type="password"
+            id="password-login"
+            class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
+          />
+        </div>
+        <button
+          class="hover:bg-lime-200 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="submit"
+        >Sign In</button>
+      </form>
+    </section>
+  </main>
+  <main
+    class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl"
+  >
+    <style>
+      .body-bg { background-color: #6c584c; background-image:
+      linear-gradient(315deg, #adc178 0%, #f0ead2 74%); }
+    </style>
+    <section>
+      <h3 class="font-bold text-2xl">Don't have an account? </h3>
+      <p class="text-gray-600 pt-2">Fill the form below and create one!.</p>
+    </section>
+
+    <section class="mt-10">
+      <form class="flex flex-col signup-form" method="POST" action="#">
+        <div class="mb-6 pt-3 rounded bg-gray-200">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2 ml-3"
+            for="username-signup"
+          >Username</label>
+          <input
+            type="text"
+            id="username-signup"
+            class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
+          />
+        </div>
+        <div class="mb-6 pt-3 rounded bg-gray-200">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2 ml-3"
+            for="email-signup"
+          >Email</label>
+          <input
+            type="text"
+            id="email-signup"
+            class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
+          />
+        </div>
+        <div class="mb-6 pt-3 rounded bg-gray-200">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2 ml-3"
+            for="password-signup"
+          >Password</label>
+          <input
+            type="password"
+            id="password-signup"
+            class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3"
+          />
+        </div>
+        <button
+          class="hover:bg-lime-200 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="submit"
+        >Sign Up</button>
+      </form>
+    </section>
+  </main>
+</body>
 
 <script src="/javascript/login.js"></script>

@@ -567,6 +567,26 @@ video {
   border-width: 1px;
 }
 
+<<<<<<< HEAD
+.bg-hero {
+  background-image: url('../images/bg-image.avif');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+=======
+<<<<<<< HEAD
+>>>>>>> e0614c9f05b4f0893d51d6e5769b460b33cf1fb4
+=======
+>>>>>>> 3242fd68a44275ae14951758452fbb942587b5d7
+>>>>>>> develop
 .italic {
   font-style: italic;
 }
