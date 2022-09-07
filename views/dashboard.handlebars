@@ -46,12 +46,18 @@
   <h2>Your Recipes</h2>
   <button id="create-btn" type="submit" class="btn">Create New Recipe</button>
   <ol>
+    <div class="flex justify-center">
+  <div class="rounded-lg shadow-lg bg-white max-w-md">
     {{#each recipes as |recipe|}}
     <li>
       {{> recipe-info recipe}}
-      <a href="/dashboard/edit/{{recipe.id}}" class="edit-link">Edit recipe</a>
+      <div class="m-2">
+      <a href="/dashboard/edit/{{recipe.id}}" class="edit-link leading-tight m-2"> Edit recipe</a>
+      </div>
     </li>
     {{/each}}
+    </div>
+    </div>
   </ol>
 </section>
 
