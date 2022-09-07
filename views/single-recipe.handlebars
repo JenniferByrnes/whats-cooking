@@ -1,19 +1,24 @@
-{{> recipe-info recipe}}
+<a href="/recipe/{{id}}"></a>
+<div class="grid grid-cols-3 gap-4 items-end mb-2 items-stretch">
 
-<article class="recipe">
+  <div class="overflow-hidden rounded-lg shadow-lg">
+    {{> recipe-info recipe}}
+  </div>
 
-  <a href="/recipe/{{id}}">
-    <div class="title">
-      <p>{{recipe.type}}</p>
-    </div>
+  <div class="overflow-hidden rounded-lg shadow-lg  bg-white max-w-md p-2">
+
+    <h1 class="text-2xl font-bold">Instructions</h1>
     <p>{{recipe.instructions}}</p>
-    <p>{{recipe.ingredients}}</p>
-    <p>{{recipe.ingredient_array}}</p>
-  </a>
-</article>
+  </div>
+  <div class="overflow-hidden rounded-lg shadow-lg  bg-white max-w-md p-2">
 
+    <h1 class="text-2xl font-bold">Ingredients</h1>
+    <p>{{recipe.ingredient_array}}</p>
+  </div>
+</div>
+</a>
 {{#if loggedIn}}
-<form class="comment-form">
+<form class="comment-form ">
   <div>
     <textarea name="comment-body"></textarea>
   </div>
