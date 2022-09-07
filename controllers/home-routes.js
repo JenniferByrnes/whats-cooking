@@ -10,6 +10,8 @@ router.get('/', (req, res) => {
       'summary',
       'title',
       'image',
+      'cuisines',
+      'type',
       'created_at'
     ],
     include: [
@@ -52,6 +54,7 @@ router.get('/recipe/:id', (req, res) => {
       'summary',
       'title',
       'image',
+      'cuisines',
       'type',
       'instructions',
       'ingredients',

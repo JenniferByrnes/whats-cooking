@@ -1,8 +1,14 @@
 <a href="/recipe/{{id}}"></a>
 <div class="grid grid-cols-3 gap-4 items-end mb-2 items-stretch">
 
-  <div class="overflow-hidden rounded-lg shadow-lg">
+  <div class="overflow-hidden rounded-lg shadow-lg max-w-md">
     {{> recipe-info recipe}}
+  </div>
+
+  <div class="overflow-hidden rounded-lg shadow-lg  bg-white max-w-md p-2">
+
+    <h1 class="text-2xl font-bold">Ingredients</h1>
+    <p>{{recipe.ingredient_array}}</p>
   </div>
 
   <div class="overflow-hidden rounded-lg shadow-lg  bg-white max-w-md p-2">
@@ -10,11 +16,7 @@
     <h1 class="text-2xl font-bold">Instructions</h1>
     <p>{{recipe.instructions}}</p>
   </div>
-  <div class="overflow-hidden rounded-lg shadow-lg  bg-white max-w-md p-2">
 
-    <h1 class="text-2xl font-bold">Ingredients</h1>
-    <p>{{recipe.ingredient_array}}</p>
-  </div>
 </div>
 </a>
 {{#if loggedIn}}
