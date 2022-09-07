@@ -2,12 +2,15 @@
 module.exports = {
   content: [
     "./public/stylesheets/style.css",
-    "./views/layouts/main.handlebars",
-    "./views/layouts/partials/dashboard.handlebars",
-    "./views/layouts/partials/edit-recipe.handlebars",
-    "./views/layouts/partials/homepage.handlebars",
-    "./views/layouts/partials/login.handlebars",
-    "./views/layouts/partials/single-recipe.handlebars",
+    ".views/layouts/main.handlebars",
+    "./views/partials/comments.handlebars",
+    "./views/partials/recipe-info.handlebars",
+    "./views/main.handlebars",
+    "./views/dashboard.handlebars",
+    "./views/edit-recipe.handlebars",
+    "./views/homepage.handlebars",
+    "./views/login.handlebars",
+    "./views/single-recipe.handlebars",
   ],
   theme: {
     extend: {},
