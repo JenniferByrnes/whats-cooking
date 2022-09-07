@@ -42,6 +42,10 @@ router.post("/", (req, res) => {
     instructions: req.body.instructions,
     cuisines: req.body.cuisines,
     serving: req.body.serving,
+    image: req.body.image,
+    summary: req.body.summary,
+    type: req.body.type,
+    user_id: req.session.user_id
   })
     .then((dbRecipeData) => res.json(dbRecipeData))
     .catch((err) => {
@@ -55,7 +59,14 @@ router.put("/:id", (req, res) => {
   // update recipe by its id
   Recipe.update(
     {
+      title: req.body.title,
       ingredients: req.body.ingredients,
+      instructions: req.body.instructions,
+      cuisines: req.body.cuisines,
+      serving: req.body.serving,
+      image: req.body.image,
+      summary: req.body.summary,
+      type: req.body.type
     },
     {
       where: {

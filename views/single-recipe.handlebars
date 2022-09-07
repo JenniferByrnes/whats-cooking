@@ -1,0 +1,31 @@
+{{> recipe-info recipe}}
+
+<article class="recipe">
+
+  <a href="/recipe/{{id}}">
+    <div class="title">
+      <p>{{recipe.type}}</p>
+    </div>
+    <p>{{recipe.instructions}}</p>
+    <p>{{recipe.ingredients}}</p>
+    <p>{{recipe.ingredient_array}}</p>
+  </a>
+</article>
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments recipe.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
