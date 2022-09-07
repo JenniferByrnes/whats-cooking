@@ -6,6 +6,9 @@ async function editFormHandler(event) {
   const ingredients = document.querySelector('textarea[name="recipe-ingredients"]').value.trim();
   const cuisines = document.querySelector('input[name="recipe-cuisines"]').value;
   const serving = document.querySelector('input[name="recipe-serving"]').value;
+  const image = document.querySelector('input[name="recipe-image"]').value;
+  const summary = document.querySelector('input[name="recipe-summary"]').value;
+  const type = document.querySelector('input[name="recipe-type"]').value;
 
   const id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
@@ -17,6 +20,9 @@ async function editFormHandler(event) {
       ingredients, 
       instructions,
       cuisines,
+      image,
+      summary,
+      type,
       serving
     }),
     headers: {

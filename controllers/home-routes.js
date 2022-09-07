@@ -7,8 +7,11 @@ router.get('/', (req, res) => {
   Recipe.findAll({
     attributes: [
       'id',
-      'instructions',
+      'summary',
       'title',
+      'image',
+      'cuisines',
+      'type',
       'created_at'
     ],
     include: [
@@ -48,8 +51,14 @@ router.get('/recipe/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'instructions',
+      'summary',
       'title',
+      'image',
+      'cuisines',
+      'type',
+      'instructions',
+      'ingredients',
+      'ingredient_array',
       'created_at'
     ],
     include: [
