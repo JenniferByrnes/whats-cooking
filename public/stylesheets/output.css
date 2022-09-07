@@ -602,8 +602,8 @@ video {
 body,
 html {
   height: 100%;
-  background-color: #046f09;
-  background-image: linear-gradient(315deg, #238896 0%, #5f72be 74%);
+  background-color: #6c584c;
+  background-image: linear-gradient(315deg, #adc178 0%, #f0ead2 74%);
   color: var(--grey);
   padding: 0;
   margin: 0;
