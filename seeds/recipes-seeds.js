@@ -427,6 +427,7 @@ const recipeData = [
     cuisines: "American",
     serving: 2,
     user_id: 1,
+
   },
 ];
 
