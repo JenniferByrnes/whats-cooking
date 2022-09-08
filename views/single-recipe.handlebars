@@ -6,12 +6,12 @@
     {{> recipe-info recipe}}
   </div>
 
-  <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-white max-w-md p-2">
+  <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2">
 
     <h1 class="text-2xl font-bold border-b border-grey-light pb-2">Ingredients</h1>
     <p>{{recipe.ingredient_array}}</p>
     <div class="flex-end border-t border-grey-light pt-2">
-      <div class="flex items-center justify-between leading-tight">
+      <div class="flex items-center justify-between">
         <div>
           Meal Type:
           {{recipe.type}}
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg  bg-white max-w-md p-2">
+  <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2">
 
     <h1 class="text-2xl font-bold border-b border-grey-light pb-2">Instructions</h1>
     <p>{{recipe.instructions}}</p>
