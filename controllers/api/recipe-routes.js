@@ -39,6 +39,7 @@ router.post("/", (req, res) => {
   Recipe.create({
     title: req.body.title,
     ingredients: req.body.ingredients,
+    ingredient_array: req.body.ingredient_array,
     instructions: req.body.instructions,
     cuisines: req.body.cuisines,
     serving: req.body.serving,
@@ -61,6 +62,7 @@ router.put("/:id", (req, res) => {
     {
       title: req.body.title,
       ingredients: req.body.ingredients,
+      ingredient_array: req.body.ingredient_array,
       instructions: req.body.instructions,
       cuisines: req.body.cuisines,
       serving: req.body.serving,
