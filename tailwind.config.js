@@ -13,7 +13,11 @@ module.exports = {
     "./views/single-recipe.handlebars",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('../images/bg-image.avif')",
+      },
+    },
   },
   plugins: [],
 };

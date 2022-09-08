@@ -1,61 +1,87 @@
-# whats-cooking
+# What's cooking?
 
-Class project to create an online recipe app.  It requires login to post/update/delete recipes.
+![License](https://img.shields.io/badge/License-MIT-lightblue.svg)
+
+## Build with:
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Description:
 
-Allows a user to search for recipes and see a picture, ingredients, and directions.  Authorized users can update, post, and delete recipes.
+In this weekly module we need to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
-Link to deployed app:
-https://someapp.herokuapp.com/
-
-## Table of Contents
+## Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Visuals](#visuals)
 - [License](#license)
-- [How to Contribute](#How-to-Contribute)
-- [Tests](#Tests)
-- [Questions?](#Questions)
-- [Video Walkthrough](#Video-Walkthrough)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
-Clone this repository and run this line: npm init --y
+1. Clone the repo
+   ```sh
+   git clone git@github.com:babaphillips/employee-tracker.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Install Inquirer package
+   ```sh
+   npm i inquirer@8.2.4
+   ```
+4. Install MySQL2
+   ```sh
+   npm install --save mysql2
+   ```
+5. Install console.table
 
-  Run source db/schema.sql to drop and add the database.
-  Run node seeds/index to seed the database with sample data if desired.
-  Run node server to start the server. Database tables are created if non-existant.
-  Run node seeds/index to seed the database with sample data if desired.
+   ```sh
+   npm install console.table --save
+
+   ```
+
+6. Initiate application
+   ```sh
+   node index
+   ```
 
 ## Usage
 
- To create the database db/schema.sql 
- To seed the database: node seeds/index 
- To start the program: node server.js
+This project can be used by individuals, groups of people or even companies to have a server where you can add and retrieves notes data from a JSON file.
+
+## Walkthrough Video
 
 ## License
 
-None
+This application is licensed under the MIT license.
 
-## How to Contribute
+## Contributing
 
-Fork the repository and do a pull request for your code to be reviewed.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are welcome. If you have a suggestion that would make this better, please fork the repo and create a pull request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
+3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
+4. Push to the Branch (`git push origin feature/New`)
+5. Open a Pull Request
 
 ## Tests
 
-node test - uses jest to execute tests.
+No tests
 
 ## Questions?
 
-GitHub profile: https://github.com/jenniferbyrnes
-GitHub profile: https://github.com/jenniferbyrnes
-GitHub profile: https://github.com/jenniferbyrnes
-GitHub profile: https://github.com/jenniferbyrnes
-GitHub profile: https://github.com/jenniferbyrnes
-GitHub profile: https://github.com/jenniferbyrnes
+Check the GitHub repository here: [GitHub](https://github.com/babaphillips/employee-tracker/)
 
-Please address any questions to one of the Team Ratatouille team members via GitHub.
-  
-  
+Check out my other projects at my Github here: [Github](https://github.com/babaphillips)
+
+How To Reach Me For Additional Questions: amandavphillips@icloud.com

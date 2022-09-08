@@ -15,12 +15,24 @@
       <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
     </div>
     <div>
-      <label for="recipe-cuisines">Cuisine</label>
-      <input type="text" id="recipe-cuisines" name="recipe-cuisines" />
+      <label for="recipe-cuisines">Choose A Cuisine</label>
+      <select cuisine="recipe-cuisines" id="recipe-cuisines">
+        <option value="Indian" selected="selected">Indian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Thai">Thai</option>
+        <option value="French">French</option>
+        <option value="Greek">Greek</option>
+        <option value="Arab">Arab</option>
+        <option value="Brazilian">Brazilian</option>
+      </select>
     </div>
     <div>
       <label for="recipe-serving">Servings</label>
-      <input type="text" id="recipe-serving" name="recipe-serving" />
+      <input type="number" min="0" id="recipe-serving" name="recipe-serving" />
     </div>
 
     <div class="field">
@@ -46,12 +58,18 @@
   <h2>Your Recipes</h2>
   <button id="create-btn" type="submit" class="btn">Create New Recipe</button>
   <ol>
+    <div class="flex justify-center">
+  <div class="rounded-lg shadow-lg bg-white max-w-md">
     {{#each recipes as |recipe|}}
     <li>
       {{> recipe-info recipe}}
-      <a href="/dashboard/edit/{{recipe.id}}" class="edit-link">Edit recipe</a>
+      <div class="m-2">
+      <a href="/dashboard/edit/{{recipe.id}}" class="edit-link leading-tight m-2"> Edit recipe</a>
+      </div>
     </li>
     {{/each}}
+    </div>
+    </div>
   </ol>
 </section>
 
