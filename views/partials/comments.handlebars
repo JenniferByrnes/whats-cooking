@@ -7,6 +7,19 @@
     <div class="text">
       {{comment_text}}
     </div>
+    <!-- input will be added here when click 'edit note' -->
+    <div class="button">
+      <!-- save button will be added when editing note -->
+      <button type="click" class="save-note-btn" data-commentID={{id}} style="display:none"> save note </button>
+      <button type="click" class="edit-note-btn" data-commentID={{id}} >edit note</button>
+      <button type="click" class="delete-note-btn" data-commentID={{id}} >delete note</button>
+    </div>
   </section>
   {{/each}}
 </div>
+
+
+{{#if loggedIn}}
+<script src="/javascript/edit-comment.js"></script>
+<script src="/javascript/delete-comment.js"></script>
+{{/if}}

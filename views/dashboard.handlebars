@@ -14,13 +14,29 @@
       <label for="recipe-ingredients">Ingredients</label>
       <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
     </div>
+       <div>
+      <label for="recipe-ingredient-array">Ingredients A</label>
+      <input type="text" id="recipe-ingredient-array" name="recipe-ingredient-array" />
+    </div>
     <div>
-      <label for="recipe-cuisines">Cuisine</label>
-      <input type="text" id="recipe-cuisines" name="recipe-cuisines" />
+      <label for="recipe-cuisines">Choose A Cuisine</label>
+      <select cuisine="recipe-cuisines" id="recipe-cuisines">
+        <option value="Indian" selected="selected">Indian</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Thai">Thai</option>
+        <option value="French">French</option>
+        <option value="Greek">Greek</option>
+        <option value="Arab">Arab</option>
+        <option value="Brazilian">Brazilian</option>
+      </select>
     </div>
     <div>
       <label for="recipe-serving">Servings</label>
-      <input type="text" id="recipe-serving" name="recipe-serving" />
+      <input type="number" min="0" id="recipe-serving" name="recipe-serving" />
     </div>
 
     <div class="field">

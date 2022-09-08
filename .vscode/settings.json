@@ -1,3 +1,7 @@
 {
-  "cSpell.words": ["JAWSDB", "Spoonacular"]
+  "cSpell.words": ["JAWSDB", "Spoonacular"],
+  "editor.tokenColorCustomizations": {
+    "comments": "",
+    "textMateRules": []
+  }
 }

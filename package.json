@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JenniferByrnes/whats-cooking#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.8",
     "bcrypt": "^5.0.1",
     "connect-session": "^0.0.1",
     "connect-session-sequelize": "^7.1.5",
@@ -28,6 +29,9 @@
     "express-session": "^1.17.3",
     "handlebars-form-helpers": "^0.1.4",
     "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.8",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "sequelize": "^6.21.4",
     "spoonacular_api": "^1.0.0"
   },
