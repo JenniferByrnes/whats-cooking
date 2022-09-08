@@ -1,78 +1,96 @@
+{{!This is the create recipe section. It is hidden until the user decides to create a new recipe}}
 <section id="create-recipe" class="hide">
 
-  <form class="new-recipe-form">
-    <h2>Create New Recipe</h2>
-    <div>
-      <label for="recipe-title">Title</label>
-      <input type="text" id="recipe-title" name="recipe-title" />
-    </div>
-    <div>
-      <label for="recipe-instructions">Instructions</label>
-      <input type="text" id="recipe-instructions" name="recipe-instructions" />
-    </div>
-    <div>
-      <label for="recipe-ingredients">Ingredients</label>
-      <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
-    </div>
-       <div>
-      <label for="recipe-ingredient-array">Ingredients A</label>
-      <input type="text" id="recipe-ingredient-array" name="recipe-ingredient-array" />
-    </div>
-    <div>
-      <label for="recipe-cuisines">Choose A Cuisine</label>
-      <select cuisine="recipe-cuisines" id="recipe-cuisines">
-        <option value="Indian" selected="selected">Indian</option>
-        <option value="Japanese">Japanese</option>
-        <option value="Italian">Italian</option>
-        <option value="Mexican">Mexican</option>
-        <option value="Chinese">Chinese</option>
-        <option value="Turkish">Turkish</option>
-        <option value="Thai">Thai</option>
-        <option value="French">French</option>
-        <option value="Greek">Greek</option>
-        <option value="Arab">Arab</option>
-        <option value="Brazilian">Brazilian</option>
-      </select>
-    </div>
-    <div>
-      <label for="recipe-serving">Servings</label>
-      <input type="number" min="0" id="recipe-serving" name="recipe-serving" />
-    </div>
+  <div class="mx-auto max-w-6xl py-20 px-12 lg:px-24 shadow-xl mb-24">
+    <form class="new-recipe-form">
+      <h2 class="text-2xl font-bold">Create New Recipe</h2>
+      <div>
+        <label for="recipe-title">Recipe Title</label>
+        <input type="text" id="recipe-title" name="recipe-title" />
+      </div>
 
-    <div class="field">
+      <div>
+        <label for="recipe-summary">Brief Recipe Summary</label>
+        <input type="text" id="recipe-summary" name="recipe-summary" />
+      </div>
+      <div>
+        <label for="recipe-instructions">Instructions</label>
+        <input type="text" id="recipe-instructions" name="recipe-instructions" />
+      </div>
+      <div>
+        <label for="recipe-ingredients">Ingredients</label>
+        <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
+      </div>
+      <div>
+        <label for="recipe-ingredient-array">Ingredients Array</label>
+        <input type="text" id="recipe-ingredient-array" name="recipe-ingredient-array" />
+      </div>
+      <div class="-mx-3 md:flex mb-2">
+        <div>
+          <label for="recipe-cuisines">Choose A Cuisine</label>
+          <select cuisine="recipe-cuisines" id="recipe-cuisines">
+            <option value="Indian" selected="selected">Indian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Thai">Thai</option>
+            <option value="French">French</option>
+            <option value="Greek">Greek</option>
+            <option value="Arab">Arab</option>
+            <option value="Brazilian">Brazilian</option>
+          </select>
+        </div>
+        <div>
+          <label for="recipe-type">Choose a Type</label>
+          <select recipeType="recipe-type" id="recipe-type">
+            <option value="Breakfast" selected="selected">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Main course">Main course</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Beverage">Beverage</option>
+            <option value="Side">Side</option>
+            <option value="Salad">Salad</option>
+            <option value="Soup">Soup</option>
+          </select>
+        </div>
+        <div>
+          <label for="recipe-serving">Servings</label>
+          <input type="number" min="0" id="recipe-serving" name="recipe-serving" />
+        </div>
+      </div>
+
+      <div class="field">
         <label class="label">Image Link (URL)</label>
         <div class="control">
-            <input class="input" id="recipe-image" type="text" name="recipe-image">
+          <input class="input" id="recipe-image" type="text" name="recipe-image" placeholder="http://....">
         </div>
-    </div>
+      </div>
 
-    <div>
-      <label for="recipe-summary">Summary</label>
-      <input type="text" id="recipe-summary" name="recipe-summary" />
-    </div>
-    <div>
-      <label for="recipe-type">Type</label>
-      <input type="text" id="recipe-type" name="recipe-type" />
-    </div>
-    <button type="add" class="btn">Add</button>
-  </form>
+      <button type="add" class="btn">Add New Recipe</button>
+    </form>
+  </div>
 </section>
 
+{{!This is the view your recipe section. It is shown until the user decides to create a new recipe or edit an existing
+one}}
 <section id="display-recipes">
   <h2>Your Recipes</h2>
   <button id="create-btn" type="submit" class="btn">Create New Recipe</button>
   <ol>
     <div class="flex justify-center">
-  <div class="rounded-lg shadow-lg bg-white max-w-md">
-    {{#each recipes as |recipe|}}
-    <li>
-      {{> recipe-info recipe}}
-      <div class="m-2">
-      <a href="/dashboard/edit/{{recipe.id}}" class="edit-link leading-tight m-2"> Edit recipe</a>
+      <div class="rounded-lg shadow-lg bg-white max-w-md">
+        {{#each recipes as |recipe|}}
+        <li>
+          {{> recipe-info recipe}}
+          <div class="m-2">
+            <a href="/dashboard/edit/{{recipe.id}}" class="edit-link leading-tight m-2"> Edit recipe</a>
+          </div>
+        </li>
+        {{/each}}
       </div>
-    </li>
-    {{/each}}
-    </div>
     </div>
   </ol>
 </section>
