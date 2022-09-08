@@ -19,11 +19,11 @@ async function commentFormHandler(event) {
     });
 
     if (response.ok) {
-      document.location.reload();
+      document.location.assign();
     } else {
       alert(response.statusText);
     }
   }
 }
 
-document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
+document.querySelector('.comment-form').addEventListener('click', commentFormHandler);

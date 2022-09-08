@@ -19,13 +19,23 @@
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button type="click">add note</button>
   </div>
+  
 </form>
 {{/if}}
 
-{{> comments recipe.comments}}
+  
+    
+    
+      {{> comments recipe.comments}}
+
+ 
+
+
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
+<script src="/javascript/edit-comment.js"></script>
+<script src="/javascript/delete-comment.js"></script>
 {{/if}}
