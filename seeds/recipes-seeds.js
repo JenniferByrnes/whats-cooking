@@ -38,7 +38,7 @@ const recipeData = [
       "Rinse potato cubes with cold water and drain well.Melt butter in a large skillet over medium heat. Place potatoes in the skillet and season with salt and pepper; mix well. Cover and cook for 10 minutes.Remove the lid and cook, turning frequently, until brown and crisp on all sides, about 10 more minutes.",
     summary: "Just like mom used to make",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg",
+      "",
     type: "Side",
     cuisines: "American",
     serving: 4,
