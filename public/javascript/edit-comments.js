@@ -3,28 +3,33 @@
  const editNote = document.querySelectorAll('.edit-note-btn')
     
     // now loop over each note in function
-  editNote.forEach((note) => {
+  editNote.forEach((editButton) => {
     // select the comment ID for this note
-    const commentID = note.getAttribute('data-commentID')
+    const commentID = editButton.getAttribute('data-commentID')
 
     // add event listener to each button to edit note when clicking 'edit' button
-    note.addEventListener('click', async () => {
+    editButton.addEventListener('click', async () => {
       // traversing DOM to div class='button'. Adding new sibling to this which is a text input html element  
-      const buttonParent = note.parentElement
+      const buttonParent = editButton.parentElement
       // create a new html input element to add infront of the buttonParent
       const inputEl = document.createElement('input')
       // add new input element in front of buttonParent
       buttonParent.prepend(inputEl)
-      // display save button and hide edit and delete buttons when edit button is clicked
+      
+      // WHEN EDIT BUTTON IS CLICKED, DISPLAY SAVE and ABORT-EDIT BUTTONS and HIDE EDIT and DELETE BUTTONS
       // selects and hides edit button when edit button is clicked
-      note.style.display = 'none'
+      editButton.style.display = 'none'
       // select and hide delete button when edit button is clicked
-      const deleteBtn = note.nextElementSibling
+      const deleteBtn = editButton.nextElementSibling
       deleteBtn.style.display = "none"
-      // now show the save button when edit button is clicked
-      const saveBtn = note.previousElementSibling
+      // now select and show the save button when edit button is clicked
+      const saveBtn = deleteBtn.nextElementSibling
       saveBtn.style.display = "inline"
-
+     // now select and show abort-edit button when edit button is clicked
+      const abortEditBtn = saveBtn.nextElementSibling
+      abortEditBtn.style.display = "inline"
+      
+      // addEventListener for save button
       saveBtn.addEventListener('click', async() => {
         // assign inputEl.value to variable
         const editNoteText = inputEl.value
@@ -43,10 +48,15 @@
             if (response.ok) {
               alert('Note Changed')
               document.location.reload(); //this reloads page when comment is edited
-            } else {
+            } else  {
               alert(response.statusText);
             }
-          
           });
-      });   
+
+          // add eventListener for abort-edit button
+          abortEditBtn.addEventListener('click', async() => {
+            document.location.reload();
+          })
+      });  
+      
    }); 
