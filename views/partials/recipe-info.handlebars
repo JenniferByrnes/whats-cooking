@@ -1,13 +1,13 @@
 <div class="flex">
   <div class="rounded-lg shadow-lg bg-transparent max-w-md">
-        <article class="recipe flex grow">
+    <article class="recipe flex grow">
       <a class="flex flex-col content-between" href="/recipe/{{id}}">
-        <div>
-          <img src="{{image}}" alt="food" />
+        <div class="flex">
+          <img class="image-container justify-center" style="height:400px; width:400px;" src="{{image}}" alt="food" />
         </div>
         <div>
-          <div class="text-gray-900 leading-tight m-2">
-            <h1 class="text-2xl font-bold hover:underline text-black">{{title}}</h1>
+          <div class="text-gray-900 leading-tight p-2" style="width:400px;">
+            <h1 class="text-2xl font-bold flex flex-wrap hover:underline text-black object-cover">{{title}}</h1>
             <div class="italic">
               {{summary}}
             </div>
