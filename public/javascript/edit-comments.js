@@ -7,8 +7,7 @@
     // select the comment ID for this note
     const commentID = note.getAttribute('data-commentID')
 
-    // add event listener to each button to delete note when clicking 'delete' button
-    // using callback function in event listener because I don't know how to do it any other way
+    // add event listener to each button to edit note when clicking 'edit' button
     note.addEventListener('click', async () => {
       // traversing DOM to div class='button'. Adding new sibling to this which is a text input html element  
       const buttonParent = note.parentElement
@@ -17,7 +16,7 @@
       // add new input element in front of buttonParent
       buttonParent.prepend(inputEl)
       // display save button and hide edit and delete buttons when edit button is clicked
-      // selects and hides save button when edit button is clicked
+      // selects and hides edit button when edit button is clicked
       note.style.display = 'none'
       // select and hide delete button when edit button is clicked
       const deleteBtn = note.nextElementSibling
