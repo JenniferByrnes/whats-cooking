@@ -1,9 +1,11 @@
-<ol class="recipe-list grid grid-cols-4 gap-4 items-end">
+<ol class="recipe-list flex flex-wrap -m-3 gap-4">
 
   {{#each recipes as |recipe|}}
-  <li class="overflow-hidden rounded-lg shadow-lg" >
-    {{> recipe-info recipe }}
-  </li>
-  {{/each}}
+
+    <li class="overflow-hidden rounded-lg shadow-lg flex">
+      {{> recipe-info recipe }}
+    </li>
+    {{/each}}
+
 
 </ol>
