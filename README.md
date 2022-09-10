@@ -4,7 +4,10 @@
 
 ## Build with:
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
@@ -12,7 +15,7 @@
 
 ## Description:
 
-In this weekly module we need to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
+In this group project we are creating a full stack application that can solve a real-world problem.
 
 ## Contents
 
@@ -28,37 +31,22 @@ In this weekly module we need to build a command-line application from scratch t
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:babaphillips/employee-tracker.git
+   git clone git@github.com:JenniferByrnes/whats-cooking.git
    ```
-2. Install NPM packages
+2. Install all NPM packages
    ```sh
-   npm install
+   npm install express--session express-handlebars connect-session-sequelize handlebars-form-helpers
    ```
-3. Install Inquirer package
+3. Initiate application
    ```sh
-   npm i inquirer@8.2.4
-   ```
-4. Install MySQL2
-   ```sh
-   npm install --save mysql2
-   ```
-5. Install console.table
-
-   ```sh
-   npm install console.table --save
-
-   ```
-
-6. Initiate application
-   ```sh
-   node index
+   node server
    ```
 
 ## Usage
 
-This project can be used by individuals, groups of people or even companies to have a server where you can add and retrieves notes data from a JSON file.
+This project can be used by individuals as a diary for their recipes. You can create, read, update and delete your own recipes besides pulling recipes from the application database.
 
-## Walkthrough Video
+## Visuals
 
 ## License
 
@@ -76,12 +64,14 @@ Contributions are what make the open source community such an amazing place to l
 
 ## Tests
 
-No tests
+No tests.
 
 ## Questions?
 
-Check the GitHub repository here: [GitHub](https://github.com/babaphillips/employee-tracker/)
-
-Check out my other projects at my Github here: [Github](https://github.com/babaphillips)
-
-How To Reach Me For Additional Questions: amandavphillips@icloud.com
+Check out the creators Github link here:
+[Github Amanda Phillips](https://github.com/babaphillips)
+[Github Jennifer Byrnes](https://github.com/JenniferByrnes)
+[Github John Sheridan](https://github.com/Camo282)
+[Github Forester Carter](https://github.com/FCarter09)
+[Github Liliana Stevens](https://github.com/Liliana)
+[Github Shanisse Wilson](https://github.com/shanissewilson)

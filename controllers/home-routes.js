@@ -1,10 +1,11 @@
 const router = require("express").Router();
 const { Recipe, User, Comment } = require("../models");
+const { Op } = require("sequelize");
 
 // get all recipes for homepage
 router.get("/", (req, res) => {
   console.log("======================");
-  Recipe.findAll({
+  const queryOptions = {
     attributes: [
       "id",
       "summary",
@@ -35,7 +36,41 @@ router.get("/", (req, res) => {
         attributes: ["username"],
       },
     ],
-  })
+  };
+
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     title: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
+
+  if (req.query.search) {
+    queryOptions.where = {
+      ingredients: {
+        [Op.substring]: req.query.search,
+      },
+    };
+  }
+
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     cuisines: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
+
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     type: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
+
+  Recipe.findAll(queryOptions)
     .then((dbRecipeData) => {
       const recipes = dbRecipeData.map((recipe) => recipe.get({ plain: true }));
 
