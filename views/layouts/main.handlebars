@@ -2,23 +2,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> What's Cooking</title>
+    <title> Whats Cooking</title>
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/stylesheets/output.css" />
-<link rel="icon" type="image/x-icon" href="/icons/favicon.ico"/>
-  </head>
-
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ms+Madi"
+    />
   </head>
   <body>
     <div class="bg-hero">
       <header class="w-full">
-        <h1 class="text-3xl font-bold underline">
-          <a href="/">Home</a>
-        </h1>
+        <h1 class="text-7xl">Whats Cooking??</h1>
         <nav>
+          <a href="/">Home</a>
           {{#if loggedIn}}
             <a href="/dashboard">Dashboard</a>
             <button id="logout" class="btn-no-style">Logout</button>
@@ -26,10 +27,6 @@
             <a href="/login">Login</a>
           {{/if}}
         </nav>
-
-      </header>
-      <header>
-        <h2 class="text-3xl font-bold underline">What's Cooking</h2>
       </header>
 
       <main>
@@ -45,5 +42,4 @@
     {{/if}}
     <script src="/javascript/searchbar.js"></script>
   </body>
-
 </html>
