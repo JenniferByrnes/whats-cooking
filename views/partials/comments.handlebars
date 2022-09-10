@@ -1,6 +1,6 @@
 <div class="comments">
   {{#each this}}
-  <section class="comment">
+  <section class="comment rounded-lg shadow-lg bg-transparent">
     <div class="meta">
       {{user.username}} on {{format_date created_at}}
     </div>
@@ -9,10 +9,11 @@
     </div>
     <!-- input will be added here when click 'edit note' -->
     <div class="button">
-      <!-- save button will be added when editing note -->
-      <button type="click" class="save-note-btn" data-commentID={{id}} style="display:none"> save note </button>
-      <button type="click" class="edit-note-btn" data-commentID={{id}} >edit note</button>
-      <button type="click" class="delete-note-btn" data-commentID={{id}} >delete note</button>
+      <button type="submit" class="edit-note-btn" data-commentID={{id}} >edit note</button>
+      <button type="submit" class="delete-note-btn" data-commentID={{id}} >delete note</button>
+       <!-- save and abortEdit buttons will be added when editing note -->
+      <button type="submit" class="save-note-btn" data-commentID={{id}} style="display:none"> save note </button>
+      <button type="submit" class="abort-edit-note-button" data-commentID={{id}} style="display:none"> return without saving </button>
     </div>
   </section>
   {{/each}}
@@ -20,6 +21,6 @@
 
 
 {{#if loggedIn}}
-<script src="/javascript/edit-comment.js"></script>
-<script src="/javascript/delete-comment.js"></script>
+<script src="/javascript/edit-comments.js"></script>
+<script src="/javascript/delete-comments.js"></script>
 {{/if}}

@@ -1,15 +1,35 @@
 const router = require("express").Router();
 const { Recipe } = require("../../models");
+const { Op } = require('sequelize')
 
 // GET /api/recipes
 router.get("/", (req, res) => {
   // get all recipes
-  Recipe.findAll()
-    .then((dbRecipeData) => res.json(dbRecipeData))
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+  if (req.query.search) {
+    console.log(req.query.search);
+    Recipe.findAll({
+      where: {
+        title: {
+          [Op.substring]: req.query.search
+        }
+      }
+    })
+      .then((dbRecipeData) => {
+
+        res.json(dbRecipeData)
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  } else {
+    Recipe.findAll()
+      .then((dbRecipeData) => res.json(dbRecipeData))
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  }
 });
 
 // GET /api/recipe/1

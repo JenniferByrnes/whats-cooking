@@ -38,7 +38,7 @@ const recipeData = [
       "Rinse potato cubes with cold water and drain well.Melt butter in a large skillet over medium heat. Place potatoes in the skillet and season with salt and pepper; mix well. Cover and cook for 10 minutes.Remove the lid and cook, turning frequently, until brown and crisp on all sides, about 10 more minutes.",
     summary: "Just like mom used to make",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg",
+    "https://www.spendwithpennies.com/wp-content/uploads/2019/02/Home-Fries-SpendWithPennies_-3.jpg" ,
     type: "Side",
     cuisines: "American",
     serving: 4,
@@ -282,7 +282,7 @@ const recipeData = [
     instructions:
       "Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain. Heat olive oil in a skillet over medium heat. Stir in the onions, green onions, and pesto. Cook until tender. Mix in salmon, and cook until heated through. Stir in 1/2 the Parmesan cheese, and continue cooking 5 minutes. Toss with the cooked pasta, and sprinkle with remaining Parmesan cheese to serve.",
     summary: "A classic hearty dinner",
-    image: "https://www.flickr.com/photos/wordridden/4860400854",
+    image: "https://webknox.com/recipeImages/660382-556x370.jpg",
     type: "Dinner",
     cuisines: "Italian",
     serving: 4,
@@ -343,7 +343,7 @@ const recipeData = [
       "Heat a cast iron pan over medium-high heat. Add oil, ginger and pork rib tips, in that order, to the hot pan. Stir-fry ribs until the surface of the ribs turns golden on all sides, about 5 minutes.Pour enough boiling water on top of the ribs so the ribs are just covered with water. Cover with a lid and cook for 10 minutes. Remove lid and keep cooking until the water is almost absorbed, 5 to 20 minutes more. Be careful not to burn the ribs. Add rock sugar, vinegar, and soy sauce. Stir until well combined and cook until sauce thickens, 1 to 2 minutes.",
     summary: "A wonderful meat dish",
     image:
-      "https://c.pxhere.com/photos/f2/0b/bbq_ribs_ribs_meat_sauce_table_wood_french_fries_salad-518880.jpg!d",
+      "https://thewoksoflife.com/wp-content/uploads/2018/05/chinese-rib-tips-2.jpg",
     type: "Dinner",
     cuisines: "Chinese",
     serving: 4,
