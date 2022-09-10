@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { Recipe, User, Comment } = require("../models");
-const { Op } = require('sequelize');
+const { Op } = require("sequelize");
 
 // get all recipes for homepage
 router.get("/", (req, res) => {
@@ -36,39 +36,39 @@ router.get("/", (req, res) => {
         attributes: ["username"],
       },
     ],
-  }
+  };
 
-  if (req.query.search) {
-    queryOptions.where = {
-      title: {
-        [Op.substring]: req.query.search
-      }
-    }
-  }
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     title: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
-  if (req.query.search) {
-    queryOptions.where = {
-      ingredient_array: {
-        [Op.substring]: req.query.search
-      }
-    }
-  }
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     ingredient_array: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
   if (req.query.search) {
     queryOptions.where = {
       cuisines: {
-        [Op.substring]: req.query.search
-      }
-    }
+        [Op.substring]: req.query.search,
+      },
+    };
   }
 
-  if (req.query.search) {
-    queryOptions.where = {
-      type: {
-        [Op.substring]: req.query.search
-      }
-    }
-  }
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     type: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
   Recipe.findAll(queryOptions)
     .then((dbRecipeData) => {

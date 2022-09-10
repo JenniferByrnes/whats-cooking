@@ -6,14 +6,14 @@
       <h2 class="text-2xl font-bold">Create New Recipe</h2>
       <div>
         <label for="recipe-title"></label>
-        <input type="text" id="recipe-title" name="recipe-title" placeholder="Name of your Recipe"/>
+        <input type="text" id="recipe-title" name="recipe-title" placeholder="Recipe Name"/>
       </div>
 
       <div>
-        <input type="text" id="recipe-summary" name="recipe-summary" class="p-2 w-full"  placeholder="Summary for your Recipe"/>
+        <input type="text" id="recipe-summary" name="recipe-summary" class="p-2 w-full"  placeholder="A brief summary for your recipe"/>
       </div>
       <div>
-        <input type="text" id="recipe-instructions" name="recipe-instructions" placeholder="Instructions"/>
+        <textarea type="text" class="p-2 w-full" id="recipe-instructions" name="recipe-instructions" placeholder="Write out your instructions here"></textarea>
       </div>
       <div>
         <label for="recipe-ingredients">Ingredients</label>
@@ -22,24 +22,25 @@
       <div>
         <label for="recipe-ingredient-array">Ingredients Array</label>
         <input type="text" id="recipe-ingredient-array" name="recipe-ingredient-array"  placeholder="Ingredients"/>
+        <button type="submit" class="btn">Add New Ingredient</button>
       </div>
-      <div class="-mx-3 md:flex mb-2">
+      <div class="flex mb-2 justify-between">
         <div>
           <label for="recipe-cuisines">Choose A Cuisine</label>
-          <select cuisine="recipe-cuisines" id="recipe-cuisines">
-            <option value="Indian" selected="selected">Indian</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Italian">Italian</option>
-            <option value="Mexican">Mexican</option>
-            <option value="Chinese">Chinese</option>
-            <option value="Turkish">Turkish</option>
-            <option value="Thai">Thai</option>
-            <option value="French">French</option>
-            <option value="Greek">Greek</option>
-            <option value="Arab">Arab</option>
-            <option value="Brazilian">Brazilian</option>
-          </select>
-        </div>
+      <select cuisine="recipe-cuisines" id="recipe-cuisines">
+        <option value="American" selected="selected">Indian</option>
+        <option value="French">Japanese</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Thai">Thai</option>
+        <option value="French">French</option>
+        <option value="Greek">Greek</option>
+        <option value="Arab">Arab</option>
+        <option value="Brazilian">Brazilian</option>
+      </select>
+    </div>
         <div>
           <label for="recipe-type">Choose a Type</label>
           <select recipeType="recipe-type" id="recipe-type">
@@ -66,7 +67,6 @@
           <input class="input" id="recipe-image" type="text" name="recipe-image" placeholder="http://....">
         </div>
       </div>
-
       <button type="submit" class="btn">Add New Recipe</button>
     </form>
   </div>
@@ -80,12 +80,12 @@ one}}
   <ol>
     <h2 class="text-2xl pt-5">Your Recipes</h2>
     <div class="flex">
-      <div class="flex flex-wrap gap-4 rounded-lg shadow-lg">
+      <div class="flex flex-wrap gap-4">
         {{#each recipes as |recipe|}}
         <li>
           {{> recipe-info recipe}}
           <div class="m-2">
-            <a href="/dashboard/edit/{{recipe.id}}" class="edit-link leading-tight m-2"> Edit recipe</a>
+            <button onclick="window.location.href='/dashboard/edit/{{recipe.id}}';" type="submit" class="btn">Edit Recipe</button>
           </div>
         </li>
         {{/each}}

@@ -44,9 +44,9 @@ In this group project we are creating a full stack application that can solve a 
 
 ## Usage
 
-This project can be used by individuals as a diary for their recipes. You can create, read, update and delete your own recipes.
+This project can be used by individuals as a diary for their recipes. You can create, read, update and delete your own recipes besides pulling recipes from the application database.
 
-## Walkthrough Video
+## Visuals
 
 ## License
 
