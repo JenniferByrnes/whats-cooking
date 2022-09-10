@@ -1,8 +1,8 @@
 {{!Get the data}}
 <a href="/recipe/{{id}}"></a>
-<div class="flex flex-col justify-between rounded-lg shadow-lg bg-transparent">
+<div class="flex flex-col rounded-lg bg-transparent">
   {{!Create the flex properties for the single recipe data}}
-  <div class="flex flex-wrap gap-4 items-end mb-2 items-stretch">
+  <div class="flex flex-wrap justify-center gap-4 items-end mb-2 items-stretch">
     {{!Call the partial for 1st recipe data card}}
     <div class="overflow-hidden rounded-lg shadow-lg max-w-md" style="width:400px;">
       {{> recipe-info recipe}}
@@ -29,7 +29,7 @@
     <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2"
       style="width:400px;">
       <h1 class="text-2xl font-bold border-b border-grey-light pb-2">Instructions</h1>
-      <p>{{recipe.instructions}}</p>
+      <div class="whitespace-pre-line">{{recipe.instructions}}</div>
       <div class="border-t border-grey-light pt-2">
         <div class="flex items-center justify-between leading-tight">
           <div>
@@ -46,12 +46,12 @@
   </div>
   </a>
   {{#if loggedIn}}
-  <form class="comment-form overflow-hidden rounded-lg shadow-lg p-2">
+  <form class="flex flex-col justify-self-center comment-form overflow-hidden rounded-lg shadow-lg p-2">
     <div>
       <textarea class="bg-transparent" name="comment-body"></textarea>
     </div>
     <div>
-      <button type="submit">add comment</button>
+      <button class="-my-3" type="submit">Add a Note</button>
     </div>
   </form>
   {{/if}}
