@@ -101,7 +101,6 @@ router.get("/recipe/:id", (req, res) => {
       "type",
       "instructions",
       "ingredients",
-      "ingredient_array",
       "created_at",
     ],
     include: [
