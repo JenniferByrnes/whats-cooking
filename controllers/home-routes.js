@@ -38,21 +38,21 @@ router.get("/", (req, res) => {
     ],
   };
 
-  if (req.query.search) {
-    queryOptions.where = {
-      title: {
-        [Op.substring]: req.query.search,
-      },
-    };
-  }
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     title: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
-  if (req.query.search) {
-    queryOptions.where = {
-      ingredient_array: {
-        [Op.substring]: req.query.search,
-      },
-    };
-  }
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     ingredient_array: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
   if (req.query.search) {
     queryOptions.where = {
@@ -62,13 +62,13 @@ router.get("/", (req, res) => {
     };
   }
 
-  if (req.query.search) {
-    queryOptions.where = {
-      type: {
-        [Op.substring]: req.query.search,
-      },
-    };
-  }
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     type: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
   Recipe.findAll(queryOptions)
     .then((dbRecipeData) => {
