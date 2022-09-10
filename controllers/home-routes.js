@@ -46,21 +46,21 @@ router.get("/", (req, res) => {
   //   };
   // }
 
-  // if (req.query.search) {
-  //   queryOptions.where = {
-  //     ingredient_array: {
-  //       [Op.substring]: req.query.search,
-  //     },
-  //   };
-  // }
-
   if (req.query.search) {
     queryOptions.where = {
-      cuisines: {
+      ingredients: {
         [Op.substring]: req.query.search,
       },
     };
   }
+
+  // if (req.query.search) {
+  //   queryOptions.where = {
+  //     cuisines: {
+  //       [Op.substring]: req.query.search,
+  //     },
+  //   };
+  // }
 
   // if (req.query.search) {
   //   queryOptions.where = {
