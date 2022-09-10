@@ -7,7 +7,7 @@ async function newFormHandler(event) {
   ).value;
 
   // putting is a default until this is figured out
-  const ingredientArray = [''];
+  const ingredientArray = [""];
   //const ingredientArray = document.querySelector(
   //  'input[name="recipe-ingredientArray"]'
   //).value;
@@ -21,7 +21,6 @@ async function newFormHandler(event) {
   const serving = document.querySelector('input[name="recipe-serving"]').value;
   const image = document.querySelector('input[name="recipe-image"]').value;
   const summary = document.querySelector('input[name="recipe-summary"]').value;
-
   const recipeType = document.getElementById("recipe-type");
   const tValue = cuisines.options[recipeType.selectedIndex].value;
 
