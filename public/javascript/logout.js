@@ -5,6 +5,7 @@ async function logout() {
   });
 
   if (response.ok) {
+    alert("You're now logged out! Thank you for visiting.")
     document.location.replace('/');
   } else {
     alert(response.statusText);
