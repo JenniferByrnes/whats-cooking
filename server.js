@@ -25,6 +25,12 @@ app.use(session(sess));
 const hbs = exphbs.create({ helpers });
 require("handlebars-form-helpers").register(hbs.handlebars);
 
+
+//hbs.handlebars.registerHelper('onchange', function() {
+//  alert("it worked - scess")
+//})
+
+
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
