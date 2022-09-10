@@ -23,7 +23,7 @@ async function newFormHandler(event) {
   const summary = document.querySelector('input[name="recipe-summary"]').value;
 
   const recipeType = document.getElementById("recipe-type");
-  const tValue = cuisines.options[recipeType.selectedIndex].value;
+  const tValue = recipeType.options[recipeType.selectedIndex].value;
 
   console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
   console.log("serving=", serving);

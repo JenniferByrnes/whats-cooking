@@ -706,10 +706,6 @@ main {
   padding: 2% 4%;
 }
 
-.bg-hero {
-  background-image: "../images/bg-image.avif";
-}
-
 .btn-no-style {
   background: none;
   border: none;
