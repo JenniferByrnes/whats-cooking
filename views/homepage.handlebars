@@ -1,15 +1,16 @@
-      {{!--add search bar here.  will need css and function added.--}}
-      <input type="text" id="js-recipe-search" placeholder="Search our database..." title="Type in ingredients, cuisine, or recipe">
-<button id="js-submit-recipe-search">Search</button>
-
-<ol class="recipe-list flex flex-wrap -m-3 gap-4">
+{{!--search bar--}}
+<div class="flex justify-center p-2">
+  <input class="mr-2" type="text" id="js-recipe-search" placeholder="Search our database..."
+    title="Type in ingredients, cuisine, or recipe">
+  <button type="submit" id="js-submit-recipe-search">Search</button>
+</div>
+{{!--recipe list--}}
+<ol class="recipe-list flex flex-wrap mt-3 gap-4">
 
   {{#each recipes as |recipe|}}
-
-    <li class="overflow-hidden rounded-lg shadow-lg flex">
-      {{> recipe-info recipe }}
-    </li>
-    {{/each}}
-
+  <li class="overflow-hidden rounded-lg shadow-lg flex">
+    {{> recipe-info recipe }}
+  </li>
+  {{/each}}
 
 </ol>
