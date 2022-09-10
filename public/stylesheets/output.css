@@ -603,7 +603,7 @@ body,
 html {
   height: 100%;
   background-color: #6c584c;
-  background-image: linear-gradient(315deg, #adc178 0%, #f0ead2 74%);
+  background-image: linear-gradient(315deg, #adc178 0%, #dde5b6 74%);
   color: var(--grey);
   padding: 0;
   margin: 0;
@@ -615,17 +615,17 @@ html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #a98467;
   font-weight: bold;
   transition: color 0.1s;
 }
 
 a:hover {
-  color: #225ca3;
+  color: #a98467;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #a98467;
   border: 0;
   padding: 1%;
   color: white;
@@ -636,7 +636,7 @@ button {
 }
 
 button:hover {
-  background-color: f0ead2;
+  background-color: #a98467;
 }
 
 .post-list {
@@ -716,7 +716,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #dde5b6;
+  color: #a98467;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
