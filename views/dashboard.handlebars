@@ -5,25 +5,23 @@
     <form class="new-recipe-form">
       <h2 class="text-2xl font-bold">Create New Recipe</h2>
       <div>
-        <label for="recipe-title">Recipe Title</label>
-        <input type="text" id="recipe-title" name="recipe-title" />
+        <label for="recipe-title"></label>
+        <input type="text" id="recipe-title" name="recipe-title" placeholder="Name of your Recipe"/>
       </div>
 
       <div>
-        <label for="recipe-summary">Brief Recipe Summary</label>
-        <input type="text" id="recipe-summary" name="recipe-summary" />
+        <input type="text" id="recipe-summary" name="recipe-summary" class="p-2 w-full"  placeholder="Summary for your Recipe"/>
       </div>
       <div>
-        <label for="recipe-instructions">Instructions</label>
-        <input type="text" id="recipe-instructions" name="recipe-instructions" />
+        <input type="text" id="recipe-instructions" name="recipe-instructions" placeholder="Instructions"/>
       </div>
       <div>
         <label for="recipe-ingredients">Ingredients</label>
-        <input type="text" id="recipe-ingredients" name="recipe-ingredients" />
+        <input type="text" id="recipe-ingredients" name="recipe-ingredients" placeholder="Ingredients"/>
       </div>
       <div>
         <label for="recipe-ingredient-array">Ingredients Array</label>
-        <input type="text" id="recipe-ingredient-array" name="recipe-ingredient-array" />
+        <input type="text" id="recipe-ingredient-array" name="recipe-ingredient-array"  placeholder="Ingredients"/>
       </div>
       <div class="-mx-3 md:flex mb-2">
         <div>
@@ -69,7 +67,7 @@
         </div>
       </div>
 
-      <button type="add" class="btn">Add New Recipe</button>
+      <button type="submit" class="btn">Add New Recipe</button>
     </form>
   </div>
 </section>
@@ -77,11 +75,12 @@
 {{!This is the view your recipe section. It is shown until the user decides to create a new recipe or edit an existing
 one}}
 <section id="display-recipes">
-  <h2>Your Recipes</h2>
+
   <button id="create-btn" type="submit" class="btn">Create New Recipe</button>
   <ol>
-    <div class="flex justify-center">
-      <div class="rounded-lg shadow-lg max-w-md">
+    <h2 class="text-2xl pt-5">Your Recipes</h2>
+    <div class="flex">
+      <div class="flex flex-wrap gap-4 rounded-lg shadow-lg">
         {{#each recipes as |recipe|}}
         <li>
           {{> recipe-info recipe}}
@@ -95,5 +94,5 @@ one}}
   </ol>
 </section>
 
-
 <script src="/javascript/add-recipe.js"></script>
+<script src="/javascript/edit-recipe.js"></script>
