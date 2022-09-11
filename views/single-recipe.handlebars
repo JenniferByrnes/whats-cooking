@@ -4,14 +4,13 @@
   {{!Create the flex properties for the single recipe data}}
   <div class="flex flex-wrap justify-center gap-4 items-end mb-2 items-stretch">
     {{!Call the partial for 1st recipe data card}}
-    <div class="overflow-hidden rounded-lg shadow-lg max-w-md" style="width:400px;">
+    <div class="overflow-hidden rounded-lg shadow-lg max-w-md" style="height:400px; width:400px;">
       {{> recipe-info recipe}}
     </div>
     {{!Ingredients - 2nd recipe data card}}
-    <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2"
-      style="width:400px;">
+    <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2">
       <h1 class="text-2xl font-bold border-b border-grey-light pb-2">Ingredients</h1>
-      <p>{{recipe.ingredient_array}}</p>
+      <div class="whitespace-pre-line">{{recipe.ingredients}}</div>
       <div class="flex-end border-t border-grey-light pt-2">
         <div class="flex items-center justify-between">
           <div>
@@ -33,12 +32,12 @@
       <div class="border-t border-grey-light pt-2">
         <div class="flex items-center justify-between leading-tight">
           <div>
-            by
-            {{recipe.user.username}}
-          </div>
-          <div>
             Cuisine:
             {{recipe.cuisines}}
+          </div>
+          <div>
+            by
+            {{recipe.user.username}}
           </div>
         </div>
       </div>
