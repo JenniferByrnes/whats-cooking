@@ -31,6 +31,7 @@
     "handlebars-form-helpers": "^0.1.4",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.19",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
     "sequelize": "^6.21.4",

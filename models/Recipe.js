@@ -24,11 +24,7 @@ Recipe.init(
     },
     // ingredients
     ingredients: {
-      type: DataTypes.STRING,
-    },
-    // ingredients
-    ingredient_array: {
-      type: DataTypes.JSON,
+      type: DataTypes.TEXT,
     },
     // instructions
     instructions: {
@@ -57,10 +53,10 @@ Recipe.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
-        key: 'id'
-      }
-    }
+        model: "user",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,

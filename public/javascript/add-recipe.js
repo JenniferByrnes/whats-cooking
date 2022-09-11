@@ -3,17 +3,11 @@ async function newFormHandler(event) {
 
   const title = document.querySelector('input[name="recipe-title"]').value;
   const ingredients = document.querySelector(
-    'input[name="recipe-ingredients"]'
+    'textarea[name="recipe-ingredients"]'
   ).value;
 
-  // putting is a default until this is figured out
-  const ingredientArray = [''];
-  //const ingredientArray = document.querySelector(
-  //  'input[name="recipe-ingredientArray"]'
-  //).value;
-
   const instructions = document.querySelector(
-    'input[name="recipe-instructions"]'
+    'textarea[name="recipe-instructions"]'
   ).value;
 
   const cuisines = document.getElementById("recipe-cuisines");
@@ -23,20 +17,13 @@ async function newFormHandler(event) {
   const summary = document.querySelector('input[name="recipe-summary"]').value;
 
   const recipeType = document.getElementById("recipe-type");
-  const tValue = cuisines.options[recipeType.selectedIndex].value;
-
-  console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
-  console.log("serving=", serving);
-  console.log("cValue=", cValue);
-  console.log("tValue=", tValue);
-  console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+  const tValue = recipeType.options[recipeType.selectedIndex].value;
 
   const response = await fetch(`/api/recipes`, {
     method: "POST",
     body: JSON.stringify({
       title,
       ingredients,
-      ingredientArray,
       instructions,
       cValue,
       image,

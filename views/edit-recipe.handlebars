@@ -1,31 +1,38 @@
-<article class="shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+<article class="shadow-md rounded px-8 pt-6 pb-8 mb-2 flex flex-col">
   <a href="/dashboard"> &larr; Exit without saving</a>
   <h2 class="text-3xl text-blue-700 text-center font-bold border-grey-light pb-2">
     Edit Recipe
   </h2>
   <form class="edit-recipe-form flex flex-col">
     <div class="mb-4 flex flex-col">
-      {{!Create the flex properties for the single recipe data}}
-      <div class="flex flex-wrap gap-4 items-end mb-2 items-stretch justify-between">
+      {{!Create the flex properties for the single recipe data cards}}
+      <div class="flex flex-wrap gap-4 items-end mb-2 items-stretch justify-center">
         {{!Call the partial for 1st recipe data card}}
-        <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg max-w-md" style="width:400px;">
+        <div class="overflow-hidden rounded-lg shadow-lg max-w-md" style="width:400px">
           <div>
-            <img src="{{recipe.image}}" alt="food">
-            <input name="recipe-image" type="text" value="{{recipe.image}}"/>
+            <img style="height:400px; width:400px;" src="{{recipe.image}}" alt="food" id="recipe-pic">
+            <input name="recipe-image" id="recipe-image" class="w-full" type="text" value="{{recipe.image}}" />
           </div>
           <div>
-            <input class="text-2xl font-bold border-b border-grey-light pb-2 mt-5 bg-transparent" name="recipe-title"
+            <input class="text-2xl font-bold border-b border-grey-light pb-2 mt-5 bg-transparent w-full" name="recipe-title"
               type="text" value="{{recipe.title}}" />
-            <input class="bg-transparent" name="recipe-summary" type="text" value="{{recipe.summary}}" />
+            <input class="bg-transparent w-full" name="recipe-summary" type="text" value="{{recipe.summary}}" />
           </div>
         </div>
         {{!Ingredients - 2nd recipe data card}}
+<<<<<<< HEAD
         <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2"
           style="width:400px;">
           <h1 class="text-2xl font-bold font-blue-700 border-b border-grey-light pb-2">Ingredients</h1>
           {{textarea "recipe-ingredients" recipe.ingredients }}
+=======
+        <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2" style="width:400px;">
+          <h1 class="text-2xl font-bold border-b border-grey-light pb-2">Ingredients</h1>
+>>>>>>> aa18e9a1c2bb3fc33b6c3560c74104a14e03b56d
 
-          {{textarea "recipe-ingredient-array" recipe.ingredient_array }}
+          <textarea name="recipe-ingredients" class=" w-full h-full whitespace-pre-line">{{recipe.ingredients }}</textarea>
+
+          {{!footer of card}}
           <div class="flex-end border-grey-light pt-2">
             <div class="flex items-center justify-between border-t border-grey-light pt-2">
               <div>
@@ -39,11 +46,12 @@
             </div>
           </div>
         </div>
-        {{!Instruction - 3rd recipe data card}}
-        <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2 "
-          style="width:400px;">
+        {{!Ingredients - 3rd recipe data card}}
+        <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2" style="width:400px;">
           <h1 class="text-2xl font-bold border-b border-grey-light pb-2 bg-transparent">Instructions</h1>
-          {{textarea "recipe-instructions" recipe.instructions }}
+
+            <textarea name="recipe-instructions" class=" w-full h-full text-left whitespace-pre-wrap indent-0">{{recipe.instructions }}</textarea>
+
           <div class="border-t border-grey-light pt-2">
             <div class="flex items-center justify-between leading-tight">
               <div>
@@ -56,7 +64,7 @@
       </div>
     </div>
     {{!Two buttons - save and delete}}
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-row gap-4 justify-center">
       <div>
         <button type="submit">Save recipe</button>
       </div>

@@ -44,9 +44,14 @@ In this group project we are creating a full stack application that can solve a 
 
 ## Usage
 
-This project can be used by individuals as a diary for their recipes. You can create, read, update and delete your own recipes.
+This project can be used by individuals as a diary for their recipes. You can create, read, update and delete your own recipes besides pulling recipes from the application database.
 
-## Walkthrough Video
+## Visuals
+
+<img src="./images/readme1.png">
+<img src="./images/readme2.png">
+<img src="./images/readme3.png">
+<img src="./images/readme4.png">
 
 ## License
 
@@ -69,9 +74,10 @@ No tests.
 ## Questions?
 
 Check out the creators Github link here:
-[Github Amanda Phillips](https://github.com/babaphillips)
-[Github Jennifer Byrnes](https://github.com/JenniferByrnes)
-[Github John Sheridan](https://github.com/Camo282)
-[Github Forester Carter](https://github.com/FCarter09)
-[Github Liliana Stevens](https://github.com/Liliana)
+
+[Github Amanda Phillips](https://github.com/babaphillips)\
+[Github Jennifer Byrnes](https://github.com/JenniferByrnes)\
+[Github John Sheridan](https://github.com/Camo282)\
+[Github Forester Carter](https://github.com/FCarter09)\
+[Github Liliana Stevens](https://github.com/Liliannas22)\
 [Github Shanisse Wilson](https://github.com/shanissewilson)
