@@ -9,12 +9,9 @@
       <div class="flex flex-wrap gap-4 items-end mb-2 items-stretch justify-center">
         {{!Call the partial for 1st recipe data card}}
         <div class="overflow-hidden rounded-lg shadow-lg max-w-md" style="width:400px">
-          {{!
-        </div>
-        <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg max-w-md" style="width:400px;">}}
           <div>
-            <img style="height:400px; width:400px;" src="{{recipe.image}}" alt="food">
-            <input name="recipe-image" type="text" value="{{recipe.image}}" />
+            <img style="height:400px; width:400px;" src="{{recipe.image}}" alt="food" id="recipe-pic">
+            <input name="recipe-image" id="recipe-image" class="w-full" type="text" value="{{recipe.image}}" />
           </div>
           <div>
             <input class="text-2xl font-bold border-b border-grey-light pb-2 mt-5 bg-transparent w-full" name="recipe-title"
