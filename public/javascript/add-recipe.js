@@ -6,12 +6,6 @@ async function newFormHandler(event) {
     'textarea[name="recipe-ingredients"]'
   ).value;
 
-  // putting is a default until this is figured out
-  const ingredientArray = [""];
-  //const ingredientArray = document.querySelector(
-  //  'input[name="recipe-ingredientArray"]'
-  //).value;
-
   const instructions = document.querySelector(
     'textarea[name="recipe-instructions"]'
   ).value;
@@ -24,14 +18,6 @@ async function newFormHandler(event) {
 
   const recipeType = document.getElementById("recipe-type");
   const tValue = recipeType.options[recipeType.selectedIndex].value;
-
-  console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
-  console.log("serving=", serving);
-  console.log(cuisines);
-  console.log(recipeType);
-  console.log("cValue=", cValue);
-  console.log("tValue=", tValue);
-  console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
 
   const response = await fetch(`/api/recipes`, {
     method: "POST",
