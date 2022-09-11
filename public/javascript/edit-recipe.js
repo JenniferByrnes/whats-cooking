@@ -4,7 +4,6 @@ async function editFormHandler(event) {
   const title = document.querySelector('input[name="recipe-title"]').value.trim();
   const instructions = document.querySelector('textarea[name="recipe-instructions"]').value.trim();
   const ingredients = document.querySelector('textarea[name="recipe-ingredients"]').value.trim();
-  const ingredientArray = document.querySelector('textarea[name="recipe-ingredient-array"]').value.trim();
   const cuisines = document.querySelector('input[name="recipe-cuisines"]').value;
   const serving = document.querySelector('input[name="recipe-serving"]').value;
   const image = document.querySelector('input[name="recipe-image"]').value;
@@ -19,7 +18,6 @@ async function editFormHandler(event) {
     body: JSON.stringify({
       title,
       ingredients, 
-      ingredientArray,
       instructions,
       cuisines,
       image,
