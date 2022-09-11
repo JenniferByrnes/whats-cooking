@@ -48,6 +48,11 @@ This project can be used by individuals as a diary for their recipes. You can cr
 
 ## Visuals
 
+<img src="./images/readme1.png">
+<img src="./images/readme2.png">
+<img src="./images/readme3.png">
+<img src="./images/readme4.png">
+
 ## License
 
 This application is licensed under the MIT license.
@@ -73,5 +78,5 @@ Check out the creators Github link here:
 [Github Jennifer Byrnes](https://github.com/JenniferByrnes)
 [Github John Sheridan](https://github.com/Camo282)
 [Github Forester Carter](https://github.com/FCarter09)
-[Github Liliana Stevens](https://github.com/Liliana)
+[Github Liliana Stevens](https://github.com/Liliannas22)
 [Github Shanisse Wilson](https://github.com/shanissewilson)
