@@ -23,7 +23,7 @@ const recipeData = [
       "Rinse potato cubes with cold water and drain well.Melt butter in a large skillet over medium heat. Place potatoes in the skillet and season with salt and pepper; mix well. Cover and cook for 10 minutes.Remove the lid and cook, turning frequently, until brown and crisp on all sides, about 10 more minutes.",
     summary: "Just like mom used to make",
     image:
-    "https://www.spendwithpennies.com/wp-content/uploads/2019/02/Home-Fries-SpendWithPennies_-3.jpg" ,
+      "https://www.spendwithpennies.com/wp-content/uploads/2019/02/Home-Fries-SpendWithPennies_-3.jpg",
     type: "Side",
     cuisines: "American",
     serving: 4,
@@ -293,7 +293,7 @@ const recipeData = [
   },
   {
     title: "Slow Cooker Pollo in Potachio",
-    ingredients: 
+    ingredients:
       "2 tsp olive oil, 8 bone-in drumsticks (skin removed), 1 tsp kosher salt, Freshly ground black pepper, 1 large yellow onion (finely chopped), 1 celery stalk chopped, 1 carrot chopped, 4 garlic cloves chopped, pinch of crushed red pepper, 1/4 cup dry white wine, 1(28-ounce) can crushed tomatoes, 1/2 cup reduced-sodium chicken broth, 3 sprigs of fresh rosemary, 1/4 tsp marjoram",
     instructions:
       "Season chicken with salt and pepper.  Brown chicken in a hot skillet with 1 tsp oil.  After all sides are browned, transfer to a slow cooker.  Add the remaining tsp of oil to the skilleet and add the onion, celery, carrot, garlic, and pepper flakes.  Cook until soft, 8-10 minutes.  Add the wine and cook for 3-4 minutes to reduce slightly.  Transfer to the slow cooker and add the tomatoes, broth, rosemary, majoram, remaining salt and pepper to taste.  Cover and cook on low for 8 hours.",
@@ -307,7 +307,7 @@ const recipeData = [
   },
   {
     title: "Ahi Tuna Poke Jicama Tacos",
-    ingredients: 
+    ingredients:
       "1 lb sushi-grade ahi tuna (cut into 1/2 inch cubes, 1/4 cup reduced-sodium soy sauce, 1 tsp toasted sesame oil, 1 tsp grated fresh ginger, 1 garlic clove (crushed), 1 medium jicama (4 inches in diameter), 1 1/2 cups shredded romain lettuce, 1 medium Hass avocado (cut into 24 thin strips), 2 Tbsp sliced scallions, 1 tsp black and white sesame seeds, Sriracha sauce",
     instructions:
       "Combine the tuna, soy, sesame oil, ginger, and garlic.  Refrigerate for 20 minutes.  Peel the jicama and slice off the ends.  Cut the hicama into twelve 1/8 inch-thick slices to create your tortillas.  To assemble the tacos, put 3 jicama slices on each of 4 plates.  Top each jicama slice with 2 Tbps shredded lettuce, 3 Tbsp tuna, 2 slices avocado, scallions, seasame seeds, and Sriracha.",
@@ -335,7 +335,7 @@ const recipeData = [
   },
   {
     title: "Lemon Tarragon Herb Butter",
-    ingredients: 
+    ingredients:
       "1 stick salted butter (softened), 2 Tbsp fresh tarragon (chopped), Zest of 1 lemon, 1/4 tsp sea salt (if using unsalted butter)",
     instructions:
       "Mix ingredients in a medium bowl and then place on parchment paper.  Fold the parchment paper over the butter mixture and using your hands roll the mixture into a log.  Twist either end of the parchemnt paper to seal.  Store in the freezer and use as needed.",
@@ -348,7 +348,7 @@ const recipeData = [
   },
   {
     title: "Whiskey Chicken",
-    ingredients: 
+    ingredients:
       "2-2.5 lb chicken, 1/2 stick butter (softened), salt and pepper, 1 lemon, 3 Tbsp whiskey, 1/2 cup heavy cream",
     instructions:
       "Preheat the oven to 400 degrees F.  Rub the chicken all over with the softened butter and squeeze the lemon over it.  Put the lemon inside the chicken cavity and season with salt and pepper.  Roast chicken until brown and crisp, about an hour or until an internal reading of 180 degrees F.  Carve the chicken and set aside.  In a skillet pour in the whiskey and set a match to burn off the alcohol.  Pour in the cream and heat through.  Pour the sauce over the chicken and serve.",
@@ -361,7 +361,7 @@ const recipeData = [
   },
   {
     title: "Pest-Stuffed Pork Chops",
-    ingredients: 
+    ingredients:
       "3 Tbsp crumbled feta cheese, 2 Tbsp basil pesto, 1 Tbsp toasted pine nuts, 4 pork loin chops (1 1/2 inch thick), 1 tsp black pepper, 1 tsn dried oregano, 1 tsp minced garlic, 1/4 tsp crushed red pepper, 1/4 tsp thyme, 1 Tbsp balsamic vinegar",
     instructions:
       "Stir together the cheese, pesto and nuts.  Cut a pocket into each chop and divide the filling into each.  If needed, use a toothpick to secure each opening.  Combine the remaining ingredients except the vinegar and rub onto each side of pork chops.  Place chops in a roasting pan and roast at 375 degrees for 35-45 minutes.  Brush vinegar onto chops during the last 5 minutes of baking.",
@@ -374,7 +374,7 @@ const recipeData = [
   },
   {
     title: "Pork Chops with Black Bean Salsa",
-    ingredients: 
+    ingredients:
       "4 pork loin chops (1 1/2 inch thick, 1 teaspoon Jamaican jerk or Cajun seasoning, 2/3 cup corn relish, 8 oz canned black beans (rinsed and drained), 1 1/2 tsp lime juice, 1/4 tsp cumin",
     instructions:
       "Trim the fat from the meat and preheat the broiler.  Rub seasoning and black pepper onto both sides of the pork chops.  Place pork chops on the unheated rack of a broiler pan.  Broil 3 to 4 inches from the heat for 16 to 20 minutes or until done, turning meat over after half the broiling time.  Meanwhile, for salsa, combine corn relish, beans, lime joice, and cumin.  Serve chops with salsa and, if desired, dairy sour cream.",
@@ -389,7 +389,7 @@ const recipeData = [
   },
   {
     title: "Grilled Peaches",
-    ingredients: 
+    ingredients:
       "3 ripe peaches (halved and pits removed), 3 Tbsp light brown sugar, 1/2 Tbsp ground cinnamon, 1 Tbsp unsalted butter (melted)",
     instructions:
       "Preheat your grill or grill pan.  Mix together the brown sugar and the cinnamon.  Lightly brush the cut side of the peaches with melted butter.  Place peaches, cut side down onto the grill for about 3 minutes or until it begins to soften.  Flip the peaches over and sprinkly the tops with the cinnamon sugar mixture.  Grill for an additional 3-4 minutes and serve with ice cream.",

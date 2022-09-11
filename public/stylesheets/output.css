@@ -685,7 +685,8 @@ form label {
 }
 
 header {
-  height: 150px;
+  border-bottom: 1px solid white;
+  height: 165px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -703,6 +704,8 @@ header h2 {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: inline-block;
+  text-align: center;
 }
 
 header h1 {
@@ -710,6 +713,7 @@ header h1 {
   border-radius: 10%;
   margin-left: 40%;
   font-family: "Ms Madi", sans-serif;
+  text-align: center;
 }
 
 main {
