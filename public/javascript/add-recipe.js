@@ -3,7 +3,7 @@ async function newFormHandler(event) {
 
   const title = document.querySelector('input[name="recipe-title"]').value;
   const ingredients = document.querySelector(
-    'input[name="recipe-ingredients"]'
+    'textarea[name="recipe-ingredients"]'
   ).value;
 
   // putting is a default until this is figured out
@@ -38,7 +38,6 @@ async function newFormHandler(event) {
     body: JSON.stringify({
       title,
       ingredients,
-      ingredientArray,
       instructions,
       cValue,
       image,
