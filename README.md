@@ -74,9 +74,10 @@ No tests.
 ## Questions?
 
 Check out the creators Github link here:
-[Github Amanda Phillips](https://github.com/babaphillips)
-[Github Jennifer Byrnes](https://github.com/JenniferByrnes)
-[Github John Sheridan](https://github.com/Camo282)
-[Github Forester Carter](https://github.com/FCarter09)
-[Github Liliana Stevens](https://github.com/Liliannas22)
+
+[Github Amanda Phillips](https://github.com/babaphillips)\
+[Github Jennifer Byrnes](https://github.com/JenniferByrnes)\
+[Github John Sheridan](https://github.com/Camo282)\
+[Github Forester Carter](https://github.com/FCarter09)\
+[Github Liliana Stevens](https://github.com/Liliannas22)\
 [Github Shanisse Wilson](https://github.com/shanissewilson)
