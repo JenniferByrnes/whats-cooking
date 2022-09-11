@@ -24,11 +24,7 @@ Recipe.init(
     },
     // ingredients
     ingredients: {
-      type: DataTypes.STRING,
-    },
-    // ingredients
-    ingredient_array: {
-      type: DataTypes.JSON,
+      type: DataTypes.TEXT,
     },
     // instructions
     instructions: {
