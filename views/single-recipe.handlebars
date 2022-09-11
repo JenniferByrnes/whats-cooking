@@ -1,6 +1,6 @@
 {{!Get the data}}
 <a href="/recipe/{{id}}"></a>
-<div class="flex flex-col justify-between rounded-lg shadow-lg bg-transparent">
+<div class="flex flex-col items-center justify-between rounded-lg shadow-lg bg-transparent">
   {{!Create the flex properties for the single recipe data}}
   <div class="flex flex-wrap gap-4 items-end mb-2 items-stretch">
     {{!Call the partial for 1st recipe data card}}
@@ -10,7 +10,7 @@
     {{!Ingredients - 2nd recipe data card}}
     <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2"
       style="width:400px;">
-      <h1 class="text-3xl font-bold font-sans text-center text-blue-700 border-b border-grey-light pb-2">Ingredients</h1>
+      <h1 class="text-3xl font-bold text-center text-white border-8 border-blue-700">Ingredients</h1>
       <p>{{recipe.ingredient_array}}</p>
       <div class="flex-end border-t border-grey-light pt-2">
         <div class="flex items-center justify-between">
@@ -28,9 +28,9 @@
     {{!Instruction - 3rd recipe data card}}
     <div class="flex flex-col justify-between overflow-hidden rounded-lg shadow-lg bg-transparent max-w-md p-2"
       style="width:400px;">
-      <h1 class="text-2xl font-bold font-sans text-blue-700 border-b border-grey-light pb-2">Instructions</h1>
+      <h1 class="text-3xl text-center font-bold text-white border-8 border-blue-700">Instructions</h1>
       <p>{{recipe.instructions}}</p>
-      <div class="border-t border-grey-light pt-2">
+      <div class="border-t border-blue-700 pt-2">
         <div class="flex items-center justify-between leading-tight">
           <div>
             by
