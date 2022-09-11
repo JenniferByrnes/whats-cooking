@@ -6,11 +6,11 @@ async function newFormHandler(event) {
     'input[name="recipe-ingredients"]'
   ).value;
 
-  // putting is a default until this is figured out
-  const ingredientArray = [""];
-  //const ingredientArray = document.querySelector(
-  //  'input[name="recipe-ingredientArray"]'
-  //).value;
+  // // putting is a default until this is figured out
+  // const ingredientArray = [""];
+  // //const ingredientArray = document.querySelector(
+  // //  'input[name="recipe-ingredientArray"]'
+  // //).value;
 
   const instructions = document.querySelector(
     'textarea[name="recipe-instructions"]'
@@ -38,7 +38,6 @@ async function newFormHandler(event) {
     body: JSON.stringify({
       title,
       ingredients,
-      ingredientArray,
       instructions,
       cValue,
       image,
