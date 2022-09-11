@@ -19,12 +19,12 @@
       <header class="w-full">
         <h1 class="text-7xl">Whats Cooking??</h1>
         <nav>
-          <a href="/">Home</a>
+          <a href="/" id="nav-a">Home</a>
           {{#if loggedIn}}
-            <a href="/dashboard">Dashboard</a>
-            <button id="logout" class="btn-no-style">Logout</button>
+            <a href="/dashboard" id="nav-a">Dashboard</a>
+            <button id="logout" class="btn-no-style" id="nav-a">Logout</button>
           {{else}}
-            <a href="/login">Login</a>
+            <a href="/login" id="nav-a">Login</a>
           {{/if}}
         </nav>
       </header>
