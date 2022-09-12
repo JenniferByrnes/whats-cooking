@@ -65,14 +65,17 @@
         <button type="button" class="delete-recipe-btn">Delete recipe</button>
       </div>
     </div>
+    </form>
     <div>
       {{> comments recipe.comments}}
     </div>
-  </form>
+  
   {{!Note field - editable}}
 
 </article>
 
+{{#if loggedIn}}
 <script src="/javascript/edit-recipe.js"></script>
 <script src="/javascript/delete-recipe.js"></script>
 <script src="/javascript/comment.js"></script>
+{{/if}}
