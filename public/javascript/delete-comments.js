@@ -2,13 +2,13 @@
   const deleteNote = document.querySelectorAll('.delete-note-btn')
 
   // now loop over each note
-  deleteNote.forEach((note) => {
+  deleteNote.forEach((deleteBtn) => {
     // select the comment ID for this note
-    const commentID = note.getAttribute('data-commentID')
+    const commentID = deleteBtn.getAttribute('data-commentID')
 
     // add event listener to each button to delete note when clicking 'delete' button
     // using callback function in event listener because I don't know how to do it any other way
-    note.addEventListener('click', async () => {
+    deleteBtn.addEventListener('click', async () => {
        const response = await fetch(`/api/comments/${commentID}`, {
           method: 'DELETE'
         });
