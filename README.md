@@ -51,8 +51,10 @@ Cooks can create, read, update, and delete their own recipes and use recipes fro
 
 <img src="./images/readme1.png">
 <img src="./images/readme2.png">
-<img src="./images/readme3.png">
+<img src="./images/dashboard-view.png">
+<img src="./images/single-recipe.png">
 <img src="./images/readme4.png">
+<img src="./images/edit-recipe.png">
 
 ## License
 
