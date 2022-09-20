@@ -18,8 +18,6 @@
 A personal cookbook, What's Cooking was created as an Interactive Full Stack development project by a team of six developers.
 A fully functional version is available [here](https://rata-whats-cooking.herokuapp.com/)
 
-https://rata-whats-cooking.herokuapp.com/
-
 ## Contents
 
 - [Installation](#installation)
