@@ -15,7 +15,7 @@
 
 ## Description:
 
-In this group project we are creating a full stack application that can solve a real-world problem.
+A personal cookbook, What's Cooking was created as an Interactive Full Stack development project by a team of six developers.
 
 ## Contents
 
@@ -44,7 +44,7 @@ In this group project we are creating a full stack application that can solve a 
 
 ## Usage
 
-This project can be used by individuals as a diary for their recipes. You can create, read, update and delete your own recipes besides pulling recipes from the application database.
+Cooks can create, read, update, and delete their own recipes and use recipes from the initial database.  Cooks can also leave (and edit or delete) notes attached to any recipe.
 
 ## Visuals
 
