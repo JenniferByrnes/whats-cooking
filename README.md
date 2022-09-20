@@ -73,7 +73,7 @@ No tests.
 
 ## Questions?
 
-Check out the creators Github link here:
+Check out the creators's Github links here:
 
 [Github Amanda Phillips](https://github.com/babaphillips)\
 [Github Jennifer Byrnes](https://github.com/JenniferByrnes)\
