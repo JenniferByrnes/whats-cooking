@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/License-MIT-lightblue.svg)
 
-## Build with:
+## Built with:
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -16,6 +16,9 @@
 ## Description:
 
 A personal cookbook, What's Cooking was created as an Interactive Full Stack development project by a team of six developers.
+A fully functional version is available [here](https://rata-whats-cooking.herokuapp.com/)\
+
+https://rata-whats-cooking.herokuapp.com/
 
 ## Contents
 
